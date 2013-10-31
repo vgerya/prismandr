@@ -73,7 +73,14 @@ public class PrismaticService {
         Response response = request
                 .post(Entity.entity(new NextTokenBuilder().createNextToken(), MediaType.APPLICATION_JSON_TYPE));
 
-        return response.readEntity(Post.class);
+        response.bufferEntity();
+        System.out.println(response.readEntity(String.class));
+
+
+        Post post = response.readEntity(Post.class);
+        response.close();
+
+        return post;
     }
 
     public UserCredential readUserHomeCredentials() throws IOException {

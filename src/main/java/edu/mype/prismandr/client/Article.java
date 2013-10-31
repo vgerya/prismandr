@@ -18,10 +18,11 @@ public class Article {
     private long id;
     private String text;
     private long date;
+    private Item related;
     @XmlElement(name = "prismatic-activity")
     private Activity activity;
     @XmlElement(name = "first-degree-connections")
-    private Connection firstDegreeCponnections;
+    private Connection firstDegreeConnections;
     private List<Image> images = new LinkedList<>();
     private Author author;
     private String commerce;
@@ -29,7 +30,7 @@ public class Article {
     private String url;
     private Feed feed;
     @XmlElement(name = "prismatic-shares")
-    private List<Share> shares = new LinkedList<>();
+    private List<PrismaticShare> prismaticShares = new LinkedList<>();
     private List<Comment> comments = new LinkedList<>();
     @XmlElement(name = "user-share-ids")
     private Share userShareIds;
@@ -40,6 +41,14 @@ public class Article {
     private List<TitledItem> topics = new LinkedList<>();
 
     public Article() {
+    }
+
+    public Item getRelated() {
+        return related;
+    }
+
+    public void setRelated(Item related) {
+        this.related = related;
     }
 
     public long getId() {
@@ -74,12 +83,12 @@ public class Article {
         this.activity = activity;
     }
 
-    public Connection getFirstDegreeCponnections() {
-        return firstDegreeCponnections;
+    public Connection getFirstDegreeConnections() {
+        return firstDegreeConnections;
     }
 
-    public void setFirstDegreeCponnections(Connection firstDegreeCponnections) {
-        this.firstDegreeCponnections = firstDegreeCponnections;
+    public void setFirstDegreeConnections(Connection firstDegreeConnections) {
+        this.firstDegreeConnections = firstDegreeConnections;
     }
 
     public List<Image> getImages() {
@@ -130,12 +139,12 @@ public class Article {
         this.feed = feed;
     }
 
-    public List<Share> getShares() {
-        return shares;
+    public List<PrismaticShare> getPrismaticShares() {
+        return prismaticShares;
     }
 
-    public void setShares(List<Share> shares) {
-        this.shares = shares;
+    public void setPrismaticShares(List<PrismaticShare> prismaticShares) {
+        this.prismaticShares = prismaticShares;
     }
 
     public List<Comment> getComments() {
@@ -184,15 +193,16 @@ public class Article {
                 .append("id", id)
                 .append("text", text)
                 .append("date", date)
+                .append("related", related)
                 .append("activity", activity)
-                .append("firstDegreeCponnections", firstDegreeCponnections)
+                .append("firstDegreeConnections", firstDegreeConnections)
                 .append("images", images)
                 .append("author", author)
                 .append("commerce", commerce)
                 .append("title", title)
                 .append("url", url)
                 .append("feed", feed)
-                .append("shares", shares)
+                .append("prismaticShares", prismaticShares)
                 .append("comments", comments)
                 .append("userShareIds", userShareIds)
                 .append("homeInterests", homeInterests)
@@ -200,4 +210,5 @@ public class Article {
                 .append("topics", topics)
                 .toString();
     }
+
 }
