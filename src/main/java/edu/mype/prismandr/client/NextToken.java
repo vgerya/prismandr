@@ -2,6 +2,8 @@ package edu.mype.prismandr.client;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
@@ -10,12 +12,19 @@ import java.util.List;
  * @author Vitaliy Gerya
  */
 @XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 public class NextToken {
     @XmlElement(name = "skip-ids")
     private List<Long> skipIds;
+    @XmlElement(name = "viewed-data")
     private List<ViewedData> viewedData;
 
     public NextToken() {
+    }
+
+    public NextToken(List<Long> skipIds, List<ViewedData> viewedData) {
+        this.skipIds = skipIds;
+        this.viewedData = viewedData;
     }
 
     public List<Long> getSkipIds() {
@@ -61,4 +70,6 @@ public class NextToken {
                 .append("viewedData", viewedData)
                 .toString();
     }
+
+
 }

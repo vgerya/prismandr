@@ -2,6 +2,8 @@ package edu.mype.prismandr.client;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -14,6 +16,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  *         {"doc-id":1382958106756,"feed-id":"news415024_51037420","dwell":0}]
  */
 @XmlRootElement(name = "viewed-data")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class ViewedData {
     @XmlElement(name = "doc-id")
     private long documentId;
@@ -22,6 +25,12 @@ public class ViewedData {
     private long dwell;
 
     public ViewedData() {
+    }
+
+    public ViewedData(long documentId, String feedId, long dwell) {
+        this.documentId = documentId;
+        this.feedId = feedId;
+        this.dwell = dwell;
     }
 
     public long getDocumentId() {
@@ -78,4 +87,6 @@ public class ViewedData {
                 .append("dwell", dwell)
                 .toString();
     }
+
+
 }

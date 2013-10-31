@@ -1,20 +1,14 @@
 package edu.mype.prismandr.client;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import javax.ws.rs.core.Cookie;
+import java.util.*;
 
 /**
  * @author Vitaliy Gerya
- *         [0] = {java.lang.String@2195}"AWSELB=936953DB108D68DEB20CB5D06387A190C1BFA7DCE57BD83126FC974AC4472DA9FD4F4FAC3B545CECB75FE926D07CA0EFDF5ABF926A62A72CBAE4D5913F403B68B4587BF681;PATH=/;MAX-AGE=900"
- *         [1] = {java.lang.String@2196}"prismatic=150597__1383152871518__rJ8WrYOvJK6GDFCzHdvhvOe3uR0s9EkRzFo9V2QdU0%3D;Expires=Thu, 30-Oct-2014 17:07:51 GMT;Path=/;Domain=.getprismatic.com"
- *         [2] = {java.lang.String@2197}"prismatic-whitelist=43;Expires=Thu, 30-Oct-2014 17:07:51 GMT;Domain=.getprismatic.com;Path=/"
- *         [3] = {java.lang.String@2198}"_ps_www=10ugf1r61nxbb5qcqunl__1ged1su23u7ot8dwkj24s1xvtojn06oi;Expires=Wed, 30-Oct-2013 17:22:51 GMT;Path=/"
  */
 public class Session {
     private final static Session EMPTY_SESSION = new Session();
-    private final Map<SessionToken, String> mainValues = new HashMap<SessionToken, String>();
-    private final Map<SessionToken, Map<String, String>> subValues = new HashMap<SessionToken, Map<String, String>>();
+    private final Map<SessionToken, Map<String, String>> cookieValues = new HashMap<SessionToken, Map<String, String>>();
     private String awselb;
 
     public static Session parseFromHeaders(List<Object> objects) {
@@ -29,12 +23,10 @@ public class Session {
             }
 
             String rowHeader = (String) header;
-            SessionToken token = findSessionToken(rowHeader);
-
             Map<String, String> keyValues = extractKeyValues(rowHeader);
+            SessionToken token = findSessionToken(keyValues);
 
-            session.mainValues.put(token,keyValues.get(token.getName()));
-            session.subValues.put(token, keyValues);
+            session.cookieValues.put(token, keyValues);
         }
 
         return session;
@@ -51,9 +43,9 @@ public class Session {
         return result;
     }
 
-    private static SessionToken findSessionToken(String rowHeader) {
+    private static SessionToken findSessionToken(Map<String, String> rowHeader) {
         for (SessionToken token : SessionToken.values()) {
-            if (rowHeader.startsWith(token.name)) {
+            if (rowHeader.keySet().contains(token.name)) {
                 return token;
             }
         }
@@ -61,7 +53,25 @@ public class Session {
         throw new PrismaticException("New session token found=" + rowHeader);
     }
 
-    private static enum SessionToken {
+    public Map<String, String> getTokenMap(SessionToken token) {
+        return cookieValues.get(token);
+    }
+
+    public String getMainTokenValue(SessionToken token) {
+        return cookieValues.get(token).get(token.getName());
+    }
+
+    public Collection<Cookie> getCookies() {
+        Collection<Cookie> cookies = new HashSet<>();
+        for (SessionToken token : SessionToken.values()) {
+            cookies.add(new Cookie(token.getName(), getMainTokenValue(token)));
+        }
+
+        return cookies;
+    }
+
+
+    public static enum SessionToken {
         AWSELB("AWSELB"),
         PRISMATIC("prismatic"),
         PRISMATIC_WHITELIST("prismatic-whitelist"),
@@ -76,4 +86,5 @@ public class Session {
             return name;
         }
     }
+
 }
