@@ -1,5 +1,8 @@
 package edu.mype.prismandr.client;
 
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
+
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -49,7 +52,7 @@ public class UserCredential {
 
     @Override
     public String toString() {
-        return new org.apache.commons.lang.builder.ToStringBuilder(this)
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
                 .append("handle", handle)
                 .append("password", password)
                 .toString();

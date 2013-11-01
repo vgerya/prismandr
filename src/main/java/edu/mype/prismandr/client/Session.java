@@ -1,5 +1,8 @@
 package edu.mype.prismandr.client;
 
+import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
+
 import javax.ws.rs.core.Cookie;
 import java.util.*;
 
@@ -87,4 +90,11 @@ public class Session {
         }
     }
 
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+                .append("cookieValues", cookieValues)
+                .append("awselb", awselb)
+                .toString();
+    }
 }

@@ -1,32 +1,30 @@
 {"id": 0, "text": null, "date": 0, "related": null, "images": null, "author": null, "commerce": null, "title": null, "url": null, "feed": null, "prismatic-shares": [
     [
         {
-            "value": {
-                "key": null,
-                "type": null,
-                "title": "UsEr",
-                "display-key": "maxdbass",
-                "name": "username"
-            },
-            "userShareAction": {
-                "actions": [],
-                "score": 1.0,
-                "following?": false
-            }
+            "key": null,
+            "type": null,
+            "title": "UsEr",
+            "display-key": "maxdbass",
+            "name": "username"
         },
         {
-            "value": {
-                "key": null,
-                "type": null,
-                "title": "UsEr",
-                "display-key": "maxdbass",
-                "name": "username"
-            },
-            "userShareAction": {
-                "actions": [],
-                "score": 1.0,
-                "following?": false
-            }
+            "actions": [],
+            "score": 1.0,
+            "following?": false
+        }
+    ],
+    [
+        {
+            "key": null,
+            "type": null,
+            "title": "UsEr",
+            "display-key": "maxdbass",
+            "name": "username"
+        },
+        {
+            "actions": [],
+            "score": 1.0,
+            "following?": false
         }
     ]
 ], "comments": null, "num-shares": 0, "topics": null}

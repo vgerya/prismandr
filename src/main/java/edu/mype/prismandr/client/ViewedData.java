@@ -1,6 +1,7 @@
 package edu.mype.prismandr.client;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -81,12 +82,35 @@ public class ViewedData {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this)
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
                 .append("documentId", documentId)
                 .append("feedId", feedId)
                 .append("dwell", dwell)
                 .toString();
     }
 
+    public static class ViewedDataBuilder {
+        private long documentId;
+        private String feedId;
+        private long dwell;
 
+        public ViewedDataBuilder setDocumentId(long documentId) {
+            this.documentId = documentId;
+            return this;
+        }
+
+        public ViewedDataBuilder setFeedId(String feedId) {
+            this.feedId = feedId;
+            return this;
+        }
+
+        public ViewedDataBuilder setDwell(long dwell) {
+            this.dwell = dwell;
+            return this;
+        }
+
+        public ViewedData createViewedData() {
+            return new ViewedData(documentId, feedId, dwell);
+        }
+    }
 }

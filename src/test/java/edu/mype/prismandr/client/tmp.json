@@ -7,7 +7,7 @@
     "remaining-count": 495,
     "query-params": {
         "subpage": "true",
-        "last-feed-id": "news182661_44934187",
+        "last-feed-id": "news183728_24896139",
         "first-article-idx": 0,
         "last-article-idx": 5
     }
@@ -24,7 +24,7 @@
         "title": "Following",
         "count": 18
     }
-}, "id": "news182661_44934187", "start": 0, "docs": [
+}, "id": "news183728_24896139", "start": 0, "docs": [
     {
         "related": {
             "type": "related",
@@ -34,10 +34,10 @@
         "date": 1383264000000,
         "prismatic-activity": {
             "save": 2,
-            "remove": 3,
+            "remove": 4,
             "share": 1,
-            "bookmark": 4,
-            "click": 57
+            "bookmark": 5,
+            "click": 63
         },
         "first-degree-connections": {
             "prismatic-actions": [],
@@ -195,13 +195,8 @@
                 "key": "Innovation"
             }
         ],
-        "num-shares": 1413,
+        "num-shares": 1517,
         "topics": [
-            {
-                "type": "topic",
-                "key": "Innovation",
-                "title": "Innovation"
-            },
             {
                 "type": "topic",
                 "key": "Inventions and Patents",
@@ -215,153 +210,6 @@
         ]
     },
     {
-        "text": "I have been lately reading The Art of War by Sun Tzu during my buss ride to work. One Chapter of the book described the five faults, which may effect to a general. I realized instantly that the text could also be applied to software engineers. Without further introduction, I will give you the five faults of a software engineer:There are five dangerous faults, which may effect to a software engineer:Recklessness, which leads to destruction. If a software engineer is reckless, his quality of work will be considerable lower than the quality of work done by software engineers, who think before they act. Reckless people tend to make a lot of mistakes and some of them might be very expensive to fix. Even though a reckless software engineer would not make expensive mistakes, he will nevertheless spent his time to fix mistakes, which could have been easily avoided. Remember that it is almost always wise to think before you act.Cowardice, which leads to capture. If a software engineer is desperate...",
-        "date": 1383258227076,
-        "prismatic-activity": {
-            "save": 4,
-            "share": 5,
-            "bookmark": 5,
-            "click": 55
-        },
-        "first-degree-connections": {
-            "prismatic-actions": [],
-            "external-actions": [],
-            "interests": [
-                {
-                    "type": "topic",
-                    "key": "Software Engineering",
-                    "title": "Software Engineering"
-                },
-                {
-                    "type": "topic",
-                    "key": "Engineering",
-                    "title": "Engineering"
-                }
-            ]
-        },
-        "images": [],
-        "author": {
-            "url": "http://www.petrikainulainen.net/books/spring-data/?utm_source=PetriKainulainenNet&utm_medium=AboutAuthorBox&utm_campaign=SpringDataBook",
-            "name": "Spring Data"
-        },
-        "commerce": null,
-        "title": "The Five Faults of a Software Engineer",
-        "url": "http://www.petrikainulainen.net/software-development/general/the-five-faults-of-a-software-engineer/",
-        "feed": {
-            "type": "feed",
-            "key": "http://www.petrikainulainen.net/feed/",
-            "title": "Petri Kainulainen",
-            "img": "http://imagecdn.getprismatic.com/pub/16/8390064315799171503.ico"
-        },
-        "prismatic-shares": [
-            [
-                {
-                    "display-key": "deadbird1980",
-                    "key": 186509,
-                    "name": "Joey Wang",
-                    "title": "deadbird1980",
-                    "img": "http://graph.facebook.com/639355840/picture?type=large",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["share", "bookmark"],
-                    "score": 2.6E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "cciotti",
-                    "key": 202975,
-                    "name": "chris ciotti",
-                    "title": "cciotti",
-                    "img": "http://pbs.twimg.com/profile_images/1263260762/Me-in-LS_bigger.jpg",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["bookmark", "share"],
-                    "score": 2.6E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "purbon",
-                    "key": 126241,
-                    "name": "Pere Urbon",
-                    "title": "purbon",
-                    "img": "http://graph.facebook.com/pere.urbon/picture?type=large",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["share"],
-                    "score": 1.6000000000000003E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "alex_mikhalev",
-                    "key": 18530,
-                    "name": "Alexander Mikhalev",
-                    "title": "alex_mikhalev",
-                    "img": "http://a0.twimg.com/sticky/default_profile_images/default_profile_3_bigger.png",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["share"],
-                    "score": 1.6000000000000003E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "rhoml",
-                    "key": 11292,
-                    "name": "Rhommel",
-                    "title": "rhoml",
-                    "img": "http://a0.twimg.com/profile_images/3307090807/519f91281d1cc98f606321abb6702d7c_bigger.png",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["share"],
-                    "score": 1.6000000000000003E-9,
-                    "following?": false
-                }
-            ]
-        ],
-        "comments": [],
-        "user-share-ids": {},
-        "id": 1383258222786,
-        "home-interests": [
-            {
-                "type": "topic",
-                "key": "Software development process"
-            },
-            {
-                "type": "topic",
-                "key": "Software Engineering"
-            },
-            {
-                "type": "topic",
-                "key": "Engineering"
-            }
-        ],
-        "num-shares": 79,
-        "topics": [
-            {
-                "type": "topic",
-                "key": "Software Engineering",
-                "title": "Software Engineering"
-            },
-            {
-                "type": "topic",
-                "key": "Engineering",
-                "title": "Engineering"
-            }
-        ]
-    },
-    {
         "related": {
             "type": "related",
             "key": 1383229837357
@@ -370,11 +218,11 @@
         "date": 1383229838491,
         "prismatic-activity": {
             "save": 3,
-            "remove": 2,
+            "remove": 3,
             "share": 4,
             "email": 1,
             "bookmark": 4,
-            "click": 43
+            "click": 46
         },
         "first-degree-connections": {
             "prismatic-actions": [],
@@ -497,7 +345,7 @@
                 "key": "Cloud Computing"
             }
         ],
-        "num-shares": 78,
+        "num-shares": 82,
         "topics": [
             {
                 "type": "topic",
@@ -530,7 +378,7 @@
             "share": 1,
             "email": 2,
             "bookmark": 2,
-            "click": 27
+            "click": 29
         },
         "first-degree-connections": {
             "prismatic-actions": [],
@@ -676,7 +524,7 @@
                 "key": "http://feeds.dzone.com/javalobby/frontpage"
             }
         ],
-        "num-shares": 43,
+        "num-shares": 45,
         "topics": [
             {
                 "type": "topic",
@@ -691,6 +539,154 @@
         ]
     },
     {
+        "text": "I have been lately reading The Art of War by Sun Tzu during my buss ride to work. One Chapter of the book described the five faults, which may effect to a general. I realized instantly that the text could also be applied to software engineers. Without further introduction, I will give you the five faults of a software engineer:There are five dangerous faults, which may effect to a software engineer:Recklessness, which leads to destruction. If a software engineer is reckless, his quality of work will be considerable lower than the quality of work done by software engineers, who think before they act. Reckless people tend to make a lot of mistakes and some of them might be very expensive to fix. Even though a reckless software engineer would not make expensive mistakes, he will nevertheless spent his time to fix mistakes, which could have been easily avoided. Remember that it is almost always wise to think before you act.Cowardice, which leads to capture. If a software engineer is desperate...",
+        "date": 1383258227076,
+        "prismatic-activity": {
+            "save": 4,
+            "remove": 2,
+            "share": 5,
+            "bookmark": 5,
+            "click": 60
+        },
+        "first-degree-connections": {
+            "prismatic-actions": [],
+            "external-actions": [],
+            "interests": [
+                {
+                    "type": "topic",
+                    "key": "Software Engineering",
+                    "title": "Software Engineering"
+                },
+                {
+                    "type": "topic",
+                    "key": "Engineering",
+                    "title": "Engineering"
+                }
+            ]
+        },
+        "images": [],
+        "author": {
+            "url": "http://www.petrikainulainen.net/books/spring-data/?utm_source=PetriKainulainenNet&utm_medium=AboutAuthorBox&utm_campaign=SpringDataBook",
+            "name": "Spring Data"
+        },
+        "commerce": null,
+        "title": "The Five Faults of a Software Engineer",
+        "url": "http://www.petrikainulainen.net/software-development/general/the-five-faults-of-a-software-engineer/",
+        "feed": {
+            "type": "feed",
+            "key": "http://www.petrikainulainen.net/feed/",
+            "title": "Petri Kainulainen",
+            "img": "http://imagecdn.getprismatic.com/pub/16/8390064315799171503.ico"
+        },
+        "prismatic-shares": [
+            [
+                {
+                    "display-key": "deadbird1980",
+                    "key": 186509,
+                    "name": "Joey Wang",
+                    "title": "deadbird1980",
+                    "img": "http://graph.facebook.com/639355840/picture?type=large",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["share", "bookmark"],
+                    "score": 2.6E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "cciotti",
+                    "key": 202975,
+                    "name": "chris ciotti",
+                    "title": "cciotti",
+                    "img": "http://pbs.twimg.com/profile_images/1263260762/Me-in-LS_bigger.jpg",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["bookmark", "share"],
+                    "score": 2.6E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "purbon",
+                    "key": 126241,
+                    "name": "Pere Urbon",
+                    "title": "purbon",
+                    "img": "http://graph.facebook.com/pere.urbon/picture?type=large",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["share"],
+                    "score": 1.6000000000000003E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "alex_mikhalev",
+                    "key": 18530,
+                    "name": "Alexander Mikhalev",
+                    "title": "alex_mikhalev",
+                    "img": "http://a0.twimg.com/sticky/default_profile_images/default_profile_3_bigger.png",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["share"],
+                    "score": 1.6000000000000003E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "rhoml",
+                    "key": 11292,
+                    "name": "Rhommel",
+                    "title": "rhoml",
+                    "img": "http://a0.twimg.com/profile_images/3307090807/519f91281d1cc98f606321abb6702d7c_bigger.png",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["share"],
+                    "score": 1.6000000000000003E-9,
+                    "following?": false
+                }
+            ]
+        ],
+        "comments": [],
+        "user-share-ids": {},
+        "id": 1383258222786,
+        "home-interests": [
+            {
+                "type": "topic",
+                "key": "Software development process"
+            },
+            {
+                "type": "topic",
+                "key": "Software Engineering"
+            },
+            {
+                "type": "topic",
+                "key": "Engineering"
+            }
+        ],
+        "num-shares": 86,
+        "topics": [
+            {
+                "type": "topic",
+                "key": "Software Engineering",
+                "title": "Software Engineering"
+            },
+            {
+                "type": "topic",
+                "key": "Engineering",
+                "title": "Engineering"
+            }
+        ]
+    },
+    {
         "text": "Raft is a new-ish consensus implementation whose great benefit, to my mind it, is its applicability for real systems. We briefly discussed it internally at Cloudera, and I thought I\u2019d share what I contributed, below. There\u2019s an underlying theme here regarding the role of distributed systems research in practitioners\u2019 daily work, and how the act of building a distributed system has not yet been sufficiently well commoditised to render a familiarity with the original research unnecessary. I think I\u2019d argue that bridging that gap further is necessary: no matter how much fun it is to read all these papers, it shouldn\u2019t be a pre-requisite to being successful in implementing a distributed system. I have more to write on this. \u201CThe trouble with Paxos is that it\u2019s \u2018only\u2019 a consensus algorithm; a theoretical achievement but not one necessarily suited to building practical systems. Remember that the demonstration that a correct, message-optimal protocol even existed was the main contribution. To...",
         "date": 1383247530439,
         "prismatic-activity": {
@@ -699,7 +695,7 @@
             "share": 1,
             "email": 1,
             "bookmark": 4,
-            "click": 11
+            "click": 13
         },
         "first-degree-connections": {
             "prismatic-actions": [],
@@ -829,7 +825,7 @@
                 "key": "Distributed Computing"
             }
         ],
-        "num-shares": 53,
+        "num-shares": 55,
         "topics": [
             {
                 "type": "topic",

@@ -71,7 +71,7 @@ public class PrismaticService {
         }
 
         Response response = request
-                .post(Entity.entity(new NextTokenBuilder().createNextToken(), MediaType.APPLICATION_JSON_TYPE));
+                .post(Entity.entity(new NextToken.NextTokenBuilder().createNextToken(), MediaType.APPLICATION_JSON_TYPE));
 
         response.bufferEntity();
         System.out.println(response.readEntity(String.class));

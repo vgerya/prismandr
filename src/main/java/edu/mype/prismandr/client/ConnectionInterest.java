@@ -5,46 +5,40 @@ import org.apache.commons.lang.builder.ToStringStyle;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.net.URL;
 
 /**
  * @author Vitaliy Gerya
  */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Size {
-    private long width;
-    private long height;
+public class ConnectionInterest extends TitledItem {
+    @XmlElement(name = "img")
+    // TODO testing of URL instead of String
+    private URL image;
 
-    public Size() {
+    public ConnectionInterest() {
     }
 
-    public Size(long width, long height) {
-        this.width = width;
-        this.height = height;
+    public ConnectionInterest(String key, String type, String title, URL image) {
+        super(key, type, title);
+        this.image = image;
     }
 
-    public long getWidth() {
-        return width;
+    public URL getImage() {
+        return image;
     }
 
-    public void setWidth(long width) {
-        this.width = width;
-    }
-
-    public long getHeight() {
-        return height;
-    }
-
-    public void setHeight(long height) {
-        this.height = height;
+    public void setImage(URL image) {
+        this.image = image;
     }
 
     @Override
     public String toString() {
         return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-                .append("width", width)
-                .append("height", height)
+                .append("image", image)
                 .toString();
     }
 }

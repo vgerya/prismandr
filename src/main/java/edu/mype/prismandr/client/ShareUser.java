@@ -1,7 +1,7 @@
 package edu.mype.prismandr.client;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
-import org.codehaus.jackson.annotate.JsonIgnoreProperties;
+import org.apache.commons.lang.builder.ToStringStyle;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -13,7 +13,6 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
-@JsonIgnoreProperties
 public class ShareUser extends TitledItem {
     @XmlElement(name = "display-key", required = false)
     private String displayKey;
@@ -57,7 +56,7 @@ public class ShareUser extends TitledItem {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this)
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
                 .append("displayKey", displayKey)
                 .append("name", name)
                 .append("image", image)

@@ -1,6 +1,7 @@
 package edu.mype.prismandr.client;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -32,7 +33,7 @@ public class Article {
     private String url;
     private Feed feed;
     @XmlElement(name = "prismatic-shares")
-    private List<List<Share>> prismaticShares = new LinkedList<>();
+    private List<List<Object>> prismaticShares = new LinkedList<>();
     private List<Comment> comments = new LinkedList<>();
     @XmlElement(name = "user-share-ids")
     private Share userShareIds;
@@ -45,7 +46,7 @@ public class Article {
     public Article() {
     }
 
-    public Article(long id, String text, long date, Item related, Activity activity, Connection firstDegreeConnections, List<Image> images, Author author, String commerce, String title, String url, Feed feed, List<List<Share>> prismaticShares, List<Comment> comments, Share userShareIds, List<Item> homeInterests, long numShares, List<TitledItem> topics) {
+    public Article(long id, String text, long date, Item related, Activity activity, Connection firstDegreeConnections, List<Image> images, Author author, String commerce, String title, String url, Feed feed, List<List<Object>> prismaticShares, List<Comment> comments, Share userShareIds, List<Item> homeInterests, long numShares, List<TitledItem> topics) {
         this.id = id;
         this.text = text;
         this.date = date;
@@ -162,11 +163,11 @@ public class Article {
         this.feed = feed;
     }
 
-    public List<List<Share>> getPrismaticShares() {
+    public List<List<Object>> getPrismaticShares() {
         return prismaticShares;
     }
 
-    public void setPrismaticShares(List<List<Share>> prismaticShares) {
+    public void setPrismaticShares(List<List<Object>> prismaticShares) {
         this.prismaticShares = prismaticShares;
     }
 
@@ -212,7 +213,7 @@ public class Article {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this)
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
                 .append("id", id)
                 .append("text", text)
                 .append("date", date)
@@ -247,10 +248,7 @@ public class Article {
         private String title;
         private String url;
         private Feed feed;
-        private List<List<Share>> prismaticShares = new ArrayList<>(1);
-        {
-            prismaticShares.add(new LinkedList<Share>());
-        }
+        private List<List<Object>> prismaticShares = new ArrayList<>();
         private List<Comment> comments;
         private Share userShareIds;
         private List<Item> homeInterests;
@@ -317,13 +315,19 @@ public class Article {
             return this;
         }
 
-        public ArticleBuilder setPrismaticShares(List<List<Share>> prismaticShares) {
+        public ArticleBuilder setPrismaticShares(List<List<Object>> prismaticShares) {
             this.prismaticShares = prismaticShares;
             return this;
         }
 
         public ArticleBuilder addPrismaticShares(Share ... share) {
             this.prismaticShares.get(0).addAll(Arrays.asList(share));
+            return this;
+        }
+
+        // TODO need fine API for set and get
+        public ArticleBuilder addPrismaticShares(ShareUser share, UserShareAction action) {
+            this.prismaticShares.add(Arrays.asList(share, action));
             return this;
         }
 

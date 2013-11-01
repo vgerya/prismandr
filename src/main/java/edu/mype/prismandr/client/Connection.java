@@ -1,6 +1,7 @@
 package edu.mype.prismandr.client;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
+import org.apache.commons.lang.builder.ToStringStyle;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -19,7 +20,7 @@ public class Connection {
     private List<Action> prismaticActions = new LinkedList<>();
     @XmlElement(name = "external-actions")
     private List<Action> externalActions = new LinkedList<>();
-    private List<TitledItem> interests = new LinkedList<>();
+    private List<ConnectionInterest> interests = new LinkedList<>();
 
     public Connection() {
     }
@@ -40,17 +41,17 @@ public class Connection {
         this.externalActions = externalActions;
     }
 
-    public List<TitledItem> getInterests() {
+    public List<ConnectionInterest> getInterests() {
         return interests;
     }
 
-    public void setInterests(List<TitledItem> interests) {
+    public void setInterests(List<ConnectionInterest> interests) {
         this.interests = interests;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this)
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
                 .append("prismaticActions", prismaticActions)
                 .append("externalActions", externalActions)
                 .append("interests", interests)
