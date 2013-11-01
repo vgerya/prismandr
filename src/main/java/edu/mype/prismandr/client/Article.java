@@ -6,6 +6,8 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -30,7 +32,7 @@ public class Article {
     private String url;
     private Feed feed;
     @XmlElement(name = "prismatic-shares")
-    private List<PrismaticShare> prismaticShares = new LinkedList<>();
+    private List<List<Share>> prismaticShares = new LinkedList<>();
     private List<Comment> comments = new LinkedList<>();
     @XmlElement(name = "user-share-ids")
     private Share userShareIds;
@@ -41,6 +43,27 @@ public class Article {
     private List<TitledItem> topics = new LinkedList<>();
 
     public Article() {
+    }
+
+    public Article(long id, String text, long date, Item related, Activity activity, Connection firstDegreeConnections, List<Image> images, Author author, String commerce, String title, String url, Feed feed, List<List<Share>> prismaticShares, List<Comment> comments, Share userShareIds, List<Item> homeInterests, long numShares, List<TitledItem> topics) {
+        this.id = id;
+        this.text = text;
+        this.date = date;
+        this.related = related;
+        this.activity = activity;
+        this.firstDegreeConnections = firstDegreeConnections;
+        this.images = images;
+        this.author = author;
+        this.commerce = commerce;
+        this.title = title;
+        this.url = url;
+        this.feed = feed;
+        this.prismaticShares = prismaticShares;
+        this.comments = comments;
+        this.userShareIds = userShareIds;
+        this.homeInterests = homeInterests;
+        this.numShares = numShares;
+        this.topics = topics;
     }
 
     public Item getRelated() {
@@ -139,11 +162,11 @@ public class Article {
         this.feed = feed;
     }
 
-    public List<PrismaticShare> getPrismaticShares() {
+    public List<List<Share>> getPrismaticShares() {
         return prismaticShares;
     }
 
-    public void setPrismaticShares(List<PrismaticShare> prismaticShares) {
+    public void setPrismaticShares(List<List<Share>> prismaticShares) {
         this.prismaticShares = prismaticShares;
     }
 
@@ -209,6 +232,129 @@ public class Article {
                 .append("numShares", numShares)
                 .append("topics", topics)
                 .toString();
+    }
+
+    public static class ArticleBuilder {
+        private long id;
+        private String text;
+        private long date;
+        private Item related;
+        private Activity activity;
+        private Connection firstDegreeConnections;
+        private List<Image> images;
+        private Author author;
+        private String commerce;
+        private String title;
+        private String url;
+        private Feed feed;
+        private List<List<Share>> prismaticShares = new ArrayList<>(1);
+        {
+            prismaticShares.add(new LinkedList<Share>());
+        }
+        private List<Comment> comments;
+        private Share userShareIds;
+        private List<Item> homeInterests;
+        private long numShares;
+        private List<TitledItem> topics;
+
+        public ArticleBuilder setId(long id) {
+            this.id = id;
+            return this;
+        }
+
+        public ArticleBuilder setText(String text) {
+            this.text = text;
+            return this;
+        }
+
+        public ArticleBuilder setDate(long date) {
+            this.date = date;
+            return this;
+        }
+
+        public ArticleBuilder setRelated(Item related) {
+            this.related = related;
+            return this;
+        }
+
+        public ArticleBuilder setActivity(Activity activity) {
+            this.activity = activity;
+            return this;
+        }
+
+        public ArticleBuilder setFirstDegreeConnections(Connection firstDegreeConnections) {
+            this.firstDegreeConnections = firstDegreeConnections;
+            return this;
+        }
+
+        public ArticleBuilder setImages(List<Image> images) {
+            this.images = images;
+            return this;
+        }
+
+        public ArticleBuilder setAuthor(Author author) {
+            this.author = author;
+            return this;
+        }
+
+        public ArticleBuilder setCommerce(String commerce) {
+            this.commerce = commerce;
+            return this;
+        }
+
+        public ArticleBuilder setTitle(String title) {
+            this.title = title;
+            return this;
+        }
+
+        public ArticleBuilder setUrl(String url) {
+            this.url = url;
+            return this;
+        }
+
+        public ArticleBuilder setFeed(Feed feed) {
+            this.feed = feed;
+            return this;
+        }
+
+        public ArticleBuilder setPrismaticShares(List<List<Share>> prismaticShares) {
+            this.prismaticShares = prismaticShares;
+            return this;
+        }
+
+        public ArticleBuilder addPrismaticShares(Share ... share) {
+            this.prismaticShares.get(0).addAll(Arrays.asList(share));
+            return this;
+        }
+
+        public ArticleBuilder setComments(List<Comment> comments) {
+            this.comments = comments;
+            return this;
+        }
+
+        public ArticleBuilder setUserShareIds(Share userShareIds) {
+            this.userShareIds = userShareIds;
+            return this;
+        }
+
+        public ArticleBuilder setHomeInterests(List<Item> homeInterests) {
+            this.homeInterests = homeInterests;
+            return this;
+        }
+
+        public ArticleBuilder setNumShares(long numShares) {
+            this.numShares = numShares;
+            return this;
+        }
+
+        public ArticleBuilder setTopics(List<TitledItem> topics) {
+            this.topics = topics;
+            return this;
+        }
+
+        public Article createArticle() {
+            return new Article(id, text, date, related, activity, firstDegreeConnections, images, author, commerce, title, url, feed, prismaticShares, comments, userShareIds, homeInterests, numShares, topics);
+        }
     }
 
 }

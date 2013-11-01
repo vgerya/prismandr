@@ -2,10 +2,7 @@ package edu.mype.prismandr.client;
 
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.*;
 
 /**
  * @author Vitaliy Gerya
@@ -13,19 +10,24 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Share {
-    @XmlElement(name = "")
-    private User user;
+    @XmlAttribute(name = " ")
+    private ShareUser user;
     @XmlElement(name = "")
     private UserShareAction userShareAction;
 
     public Share() {
     }
 
-    public User getUser() {
+    public Share(ShareUser user, UserShareAction userShareAction) {
+        this.user = user;
+        this.userShareAction = userShareAction;
+    }
+
+    public ShareUser getUser() {
         return user;
     }
 
-    public void setUser(User share) {
+    public void setUser(ShareUser user) {
         this.user = user;
     }
 
@@ -43,5 +45,24 @@ public class Share {
                 .append("user", user)
                 .append("userShareAction", userShareAction)
                 .toString();
+    }
+
+    public static class ShareBuilder {
+        private ShareUser user;
+        private UserShareAction userShareAction;
+
+        public ShareBuilder setUser(ShareUser user) {
+            this.user = user;
+            return this;
+        }
+
+        public ShareBuilder setUserShareAction(UserShareAction userShareAction) {
+            this.userShareAction = userShareAction;
+            return this;
+        }
+
+        public Share createShare() {
+            return new Share(user, userShareAction);
+        }
     }
 }
