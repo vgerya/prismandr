@@ -3,12 +3,15 @@ package edu.mype.prismandr.client;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * @author Vitaliy Gerya
  */
 @XmlRootElement(name = "")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class UserCredential {
     private String handle;
     private String password;
