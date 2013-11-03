@@ -16,7 +16,7 @@ public class Post {
     private String id;
     private int start;
     private Interest interest;
-    private Next next;
+    private NextRequest next;
     private Removed removed;
     @XmlElement(name = "related-interests")
     private RelatedInterests relatedInterests;
@@ -50,11 +50,11 @@ public class Post {
         this.interest = interest;
     }
 
-    public Next getNext() {
+    public NextRequest getNext() {
         return next;
     }
 
-    public void setNext(Next next) {
+    public void setNext(NextRequest next) {
         this.next = next;
     }
 

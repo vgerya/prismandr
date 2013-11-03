@@ -2,6 +2,8 @@ package edu.mype.prismandr.client;
 
 import org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider;
 import org.glassfish.jersey.client.ClientConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.ws.rs.client.*;
 import javax.ws.rs.core.Cookie;
@@ -16,6 +18,7 @@ import java.util.Properties;
  * @author Vitaliy Gerya
  */
 public class PrismaticService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(PrismaticService.class);
     private static final String PRISMANDR_PROPERTIES = "prismandr.properties";
     private final Client client;
 
@@ -55,32 +58,59 @@ public class PrismaticService {
             throw new PrismaticAuthenticationException(response);
     }
 
-    public Post fetch(Session session) {
-        WebTarget target = client.target("http://api.getprismatic.com/")
-                                 .path("news/personal/personalkey")
-                                 .queryParam("api-version", "1.2")
-                                 .queryParam("first-article-idx", "8")
-                                 .queryParam("last-article-idx", "13")
-                                 .queryParam("last-feed-id", "news415024_51037420")
-                                 .queryParam("subpage", "true");
+    public Post fetch(Session session, NextRequest next) {
+        LOGGER.debug(((next == null) ? "Initial request" : "next request: " + next) + "/n Session: " + session
+                .toString());
+        WebTarget target = createInitialFetchTarget();
+
+        if (next != null) {
+            target = fillNextParameters(next, target);
+        }
 
         Invocation.Builder request = target.request();
 
-        for (Cookie cookie : session.getCookies()) {
-            request = request.cookie(cookie);
-        }
+        request = appendCookies(session, request);
 
         Response response = request
-                .post(Entity.entity(new NextToken.NextTokenBuilder().createNextToken(), MediaType.APPLICATION_JSON_TYPE));
+                .post(Entity
+                        .entity(new NextToken.NextTokenBuilder().createNextToken(), MediaType.APPLICATION_JSON_TYPE));
 
         response.bufferEntity();
-        System.out.println(response.readEntity(String.class));
-
-
+        try {
+            String responseJson = response.readEntity(String.class);
+            LOGGER.debug("Full response: " + responseJson);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
         Post post = response.readEntity(Post.class);
         response.close();
 
         return post;
+    }
+
+    private Invocation.Builder appendCookies(Session session, Invocation.Builder request) {
+        for (Cookie cookie : session.getCookies()) {
+            request = request.cookie(cookie);
+        }
+        return request;
+    }
+
+    private WebTarget fillNextParameters(NextRequest next, WebTarget target) {
+        target = target.queryParam("first-article-idx", next.getQueryParams().getFirstArticleIdx())
+                       .queryParam("last-article-idx", next.getQueryParams().getLastArticleIdx())
+                       .queryParam("last-feed-id", next.getQueryParams().getLastFeedID())
+                       .queryParam("subpage", next.getQueryParams().isSubpage());
+        return target;
+    }
+
+    private WebTarget createInitialFetchTarget() {
+        return client.target("http://api.getprismatic.com/")
+                     .path("news/personal/personalkey")
+                     .queryParam("api-version", "1.2");
+    }
+
+    public Post fetch(Session session) {
+        return fetch(session, null);
     }
 
     public UserCredential readUserHomeCredentials() throws IOException {
@@ -93,4 +123,6 @@ public class PrismaticService {
 
         return credential;
     }
+
+
 }

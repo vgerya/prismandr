@@ -7,6 +7,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.net.URL;
 
 /**
  * @author Vitaliy Gerya
@@ -18,12 +19,12 @@ public class ShareUser extends TitledItem {
     private String displayKey;
     private String name;
     @XmlElement(name = "img")
-    private String image;
+    private URL image;
 
     public ShareUser() {
     }
 
-    public ShareUser(String key, String type, String title, String displayKey, String name, String image) {
+    public ShareUser(String key, String type, String title, String displayKey, String name, URL image) {
         super(key, type, title);
         this.displayKey = displayKey;
         this.name = name;
@@ -46,11 +47,11 @@ public class ShareUser extends TitledItem {
         this.name = name;
     }
 
-    public String getImage() {
+    public URL getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(URL image) {
         this.image = image;
     }
 

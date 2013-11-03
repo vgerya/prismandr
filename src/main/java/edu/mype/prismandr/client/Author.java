@@ -6,6 +6,7 @@ import org.apache.commons.lang.builder.ToStringStyle;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.net.URL;
 
 /**
  * @author Vitaliy Gerya
@@ -13,17 +14,17 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Author {
-    private String url;
+    private URL url;
     private String name;
 
     public Author() {
     }
 
-    public String getUrl() {
+    public URL getUrl() {
         return url;
     }
 
-    public void setUrl(String url) {
+    public void setUrl(URL url) {
         this.url = url;
     }
 

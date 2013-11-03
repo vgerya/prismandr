@@ -7,6 +7,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.net.URL;
 
 /**
  * @author Vitaliy Gerya
@@ -15,22 +16,33 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Feed extends TitledItem {
     @XmlElement(name = "img")
-    private String image;
+    private URL image;
     @XmlElement(name = "highres-img")
-    private String highResImage;
+    private URL highResImage;
     private String displayType;
     // TODO replace long with Date
     private long since;
+    private long priority;
 
     public Feed() {
     }
 
-    public Feed(String key, String type, String title, String image, String highResImage, String displayType, long since) {
+    public long getPriority() {
+        return priority;
+    }
+
+    public void setPriority(long priority) {
+        this.priority = priority;
+    }
+
+    public Feed(String key, String type, String title, URL image, URL highResImage, String displayType, long since, long priority) {
+
         super(key, type, title);
         this.image = image;
         this.highResImage = highResImage;
         this.displayType = displayType;
         this.since = since;
+        this.priority = priority;
     }
 
     public String getDisplayType() {
@@ -49,19 +61,19 @@ public class Feed extends TitledItem {
         this.since = since;
     }
 
-    public String getImage() {
+    public URL getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(URL image) {
         this.image = image;
     }
 
-    public String getHighResImage() {
+    public URL getHighResImage() {
         return highResImage;
     }
 
-    public void setHighResImage(String highResImage) {
+    public void setHighResImage(URL highResImage) {
         this.highResImage = highResImage;
     }
 
@@ -72,6 +84,7 @@ public class Feed extends TitledItem {
                 .append("highResImage", highResImage)
                 .append("displayType", displayType)
                 .append("since", since)
+                .append("priority", priority)
                 .toString();
     }
 }

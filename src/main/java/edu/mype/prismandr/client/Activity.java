@@ -81,37 +81,6 @@ public class Activity {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Activity activity = (Activity) o;
-
-        if (bookmark != activity.bookmark) return false;
-        if (click != activity.click) return false;
-        if (comment != activity.comment) return false;
-        if (email != activity.email) return false;
-        if (remove != activity.remove) return false;
-        if (save != activity.save) return false;
-        if (share != activity.share) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = (int) (save ^ (save >>> 32));
-        result = 31 * result + (int) (comment ^ (comment >>> 32));
-        result = 31 * result + (int) (remove ^ (remove >>> 32));
-        result = 31 * result + (int) (share ^ (share >>> 32));
-        result = 31 * result + (int) (email ^ (email >>> 32));
-        result = 31 * result + (int) (bookmark ^ (bookmark >>> 32));
-        result = 31 * result + (int) (click ^ (click >>> 32));
-        return result;
-    }
-
-
-    @Override
     public String toString() {
         return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
                 .append("save", save)

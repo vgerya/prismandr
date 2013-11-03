@@ -18,13 +18,27 @@ public class ConnectionInterest extends TitledItem {
     @XmlElement(name = "img")
     // TODO testing of URL instead of String
     private URL image;
+    @XmlElement(name="highres-img")
+    private URL highResImage;
+    private long since;
 
     public ConnectionInterest() {
     }
 
-    public ConnectionInterest(String key, String type, String title, URL image) {
-        super(key, type, title);
-        this.image = image;
+    public URL getHighResImage() {
+        return highResImage;
+    }
+
+    public void setHighResImage(URL highResImage) {
+        this.highResImage = highResImage;
+    }
+
+    public long getSince() {
+        return since;
+    }
+
+    public void setSince(long since) {
+        this.since = since;
     }
 
     public URL getImage() {
@@ -39,6 +53,8 @@ public class ConnectionInterest extends TitledItem {
     public String toString() {
         return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
                 .append("image", image)
+                .append("highResImage", highResImage)
+                .append("since", since)
                 .toString();
     }
 }

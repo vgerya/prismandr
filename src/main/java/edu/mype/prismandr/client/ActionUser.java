@@ -22,11 +22,19 @@ public class ActionUser extends TitledItem {
     public ActionUser() {
     }
 
-    public ActionUser(String key, String type, String title, String name, String title1, String image) {
+    public ActionUser(String key, String type, String title, String name, String url, String image) {
         super(key, type, title);
         this.name = name;
-        title = title1;
+        this.url = url;
         this.image = image;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     public String getName() {

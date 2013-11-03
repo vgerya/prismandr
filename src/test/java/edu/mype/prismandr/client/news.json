@@ -4,25 +4,45 @@
     "title": "Home",
     "type": "personal"
 }, "next": {
-    "remaining-count": 482,
+    "remaining-count": 495,
     "query-params": {
         "subpage": "true",
-        "last-feed-id": "news415024_51037420",
-        "first-article-idx": 13,
-        "last-article-idx": 18
+        "last-feed-id": "news184702_61773747",
+        "first-article-idx": 0,
+        "last-article-idx": 5
     }
-}, "id": "news415024_51037420", "start": 13, "docs": [
+}, "removed": {
+    "remaining-count": 203
+}, "related-interests": {
+    "interests": {
+        "url": "/user/interests/interests?api-version=1.0",
+        "title": "Interests",
+        "count": 135
+    },
+    "following": {
+        "url": "/user/interests/following?api-version=1.0",
+        "title": "Following",
+        "count": 18
+    }
+}, "id": "news184702_61773747", "start": 0, "docs": [
     {
-        "text": "In this post, I'm going to show you how to configure an Immutant                 cluster as a Datomic storage service and test it with an example                 application. Datomic prescribes a unique architecture in which database concepts                 -- transactions, queries, and storage -- are separated. It                 treats external storage engines much the same way a traditional                 database treats a file system. And one of its supported engines is                 Infinispan, which just so happens to be included in Immutant! But there's a catch. Immutant only provides in-process access to                 Infinispan. And the Datomic transactor is a standalone                 application meant to run in its own process, so it expects to access                 Infinispan via a HotRod server, which is not provided by Immutant...                                  ...until now! As of version 1.1.0 of the lein-immutant plugin, it's possible to                 overlay...",
-        "date": 1382970344835,
+        "text": "We\u2019ve got some exciting news to share around Elasticsearch and Hadoop. Elasticsearch and Hortonworks have strengthened their relationship by formally partnering up, which has resulted in Elasticsearch now being the first certified Hortonworks Apache YARN search vendor. With both Elasticsearch and Hortonworks being leaders in the open source space, this partnership will lead to a valuable integration between Elasticsearch and Hadoop that anyone using the open source products will benefit from.\n\nThis is what Hortonworks said about our newly formed partnership: \u201CThe over 400,000 downloads a month is a testament to the level of trust put into Elasticsearch. Since Elasticsearch and Hadoop are such critical elements to the data analytics infrastructure for a huge number of users, we\u2019re excited by this opportunity to join together and reach beyond our users\u2019 expectations.\u201D Shaun Conolly, Vice President, Corporate Strategy at Hortonworks Elasticsearch\u2019s real-time data exploration, analytics, logging...",
+        "date": 1383237508600,
         "prismatic-activity": {
             "save": 1,
-            "click": 2
+            "share": 1,
+            "bookmark": 1,
+            "click": 7
         },
         "first-degree-connections": {
             "prismatic-actions": [],
             "external-actions": [],
             "interests": [
+                {
+                    "type": "topic",
+                    "key": "Data Mining",
+                    "title": "Data Mining"
+                },
                 {
                     "type": "topic",
                     "key": "Distributed Computing",
@@ -33,25 +53,75 @@
         "images": [],
         "author": null,
         "commerce": null,
-        "title": "Immutant as a Datomic Storage Service",
-        "url": "http://immutant.org/news/2013/10/28/hotrod-datomic/",
+        "title": "Elasticsearch And Hortonworks Partner",
+        "url": "http://elasticsearch.com/blog/elasticsearch-and-hortonworks-partner-what-you-need-to-know/",
         "feed": {
             "type": "feed",
-            "key": "http://immutant.org/news.atom",
-            "title": "Immutant",
-            "img": "http://imagecdn.getprismatic.com/pub/16/-4301608723636641281.ico"
+            "key": "elasticsearch.com",
+            "title": "elasticsearch.com",
+            "img": "http://imagecdn.getprismatic.com/pub/16/-2697883896217563764.ico"
         },
-        "prismatic-shares": [],
+        "prismatic-shares": [
+            [
+                {
+                    "display-key": "rhoml",
+                    "key": 11292,
+                    "name": "Rhommel",
+                    "title": "rhoml",
+                    "img": "http://a0.twimg.com/profile_images/3307090807/519f91281d1cc98f606321abb6702d7c_bigger.png",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["share"],
+                    "score": 1.6000000000000003E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "wattersjames",
+                    "key": 34112,
+                    "name": "James Watters",
+                    "title": "wattersjames",
+                    "img": "http://a0.twimg.com/profile_images/3335647879/cf6b3734ce74d5eba1ce9bbe9f677e82_bigger.jpeg",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["bookmark"],
+                    "score": 1.0E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "jamesbathgate",
+                    "key": 1908,
+                    "name": "James Bathgate",
+                    "title": "jamesbathgate",
+                    "img": "http://a0.twimg.com/profile_images/807844041/avatar_bigger.jpg",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["click"],
+                    "score": 2.0000000000000003E-10,
+                    "following?": false
+                }
+            ]
+        ],
         "comments": [],
         "user-share-ids": {},
-        "id": 1382970341287,
+        "id": 1383237506703,
         "home-interests": [
+            {
+                "type": "topic",
+                "key": "Data Mining"
+            },
             {
                 "type": "topic",
                 "key": "Distributed Computing"
             }
         ],
-        "num-shares": 18,
+        "num-shares": 32,
         "topics": [
             {
                 "type": "topic",
@@ -60,17 +130,19 @@
             },
             {
                 "type": "topic",
-                "key": "Storage",
-                "title": "Storage"
+                "key": "Data Mining",
+                "title": "Data Mining"
             }
         ]
     },
     {
-        "text": "So I decided to continue with my \u201Cunderstanding how\u201D series of posts with one about the Windows Fabric.  The great thing about Windows Fabric is that you shouldn\u2019t need to do anything and it should just \u201Cwork\u201D.  But sometimes I think it\u2019s fun to look at how things actually work under the hood.\n\nOverview A picture is worth a thousand words and this picture has been used numerous times at Lync Conference and other Lync Ignite classes and I think it does a great job of giving a high-level view of what Fabric does and why 2013 choose to use it.\n\nAs the picture details, one of the biggest changes the Windows Fabric allowed is to move user services from the back-end database to the front-end servers.  This gives Lync 2013 several advantages in that you can scale further by adding more servers to the pool, relies less on the back-end database, is self-healing as it automatically monitors the state of other servers in the fabric and gives you a decentralized approach to limit the single point of...",
-        "date": 1383013490230,
+        "text": "You should consider following to make your function (recursive function) eligible for tail-call optimization : \tIt should be a tail call.It should be a final method or local function.It should be call to itself.\n\nInvalid function for tail-call optimization  Following code is not tail-call optimizable so if we apply @tailrec, Compiler will throw compile time error : \"could not optimize @tailrec annotated method sumRange2\"     /**    * Compile time error :    * Following method could not optimize @tailrec annotated method sumRange2:    * it contains a recursive call not in tail position    */   @tailrec   def sumRange2(start: Int, end: Int): Int = {     if (start > end) {       println(\"Invalid range!!\")       -1     } else if (start == end) {       start     } else {       start + sumRange2(start + 1, end)     }   }   Valid function for tail-call optimization  Following is valid code for tail-call optimization hence when we apply @tailrec, Compiler won't complaint for that.\n\n  def sumRange1(start:...",
+        "date": 1383208768945,
         "prismatic-activity": {
-            "save": 1,
-            "click": 1
+            "save": 4,
+            "share": 1,
+            "bookmark": 3,
+            "click": 23
         },
         "first-degree-connections": {
             "prismatic-actions": [],
@@ -78,8 +150,8 @@
             "interests": [
                 {
                     "type": "topic",
-                    "key": "Database",
-                    "title": "Database"
+                    "key": "Scala (programming language)",
+                    "title": "Scala (programming language)"
                 },
                 {
                     "type": "topic",
@@ -88,61 +160,101 @@
                 }
             ]
         },
-        "images": [
-            {
-                "in-div": 1,
-                "orig-size": {
-                    "height": "280",
-                    "width": "643"
-                },
-                "size": {
-                    "width": 643,
-                    "height": 280
-                },
-                "url": "http://masteringlync.com/files/2013/10/pic42.png"
-            },
-            {
-                "prob": 0.991814323034998,
-                "orig-size": {
-                    "height": "330",
-                    "width": "597"
-                },
-                "size": {
-                    "width": 932,
-                    "height": 515
-                },
-                "url": "http://masteringlync.com/files/2013/10/pic11.png"
-            },
-            {
-                "prob": 0.9872293145227427,
-                "orig-size": {
-                    "height": "200",
-                    "width": "566"
-                },
-                "size": {
-                    "width": 943,
-                    "height": 334
-                },
-                "url": "http://masteringlync.com/files/2013/10/pic22.png"
-            }
-        ],
+        "images": [],
         "author": {
-            "name": "Richard Brynteson",
-            "url": "http://masteringlync.com/author/rbrynteson/"
+            "url": null,
+            "name": "swetagupta"
         },
         "commerce": null,
-        "title": "Understanding how Windows Fabric Works",
-        "url": "http://masteringlync.com/2013/10/29/understanding-how-windows-fabric-works/",
+        "title": "Optimize recursive function calls in Scala",
+        "url": "http://www.guruzon.com/2/scala/annotations/use-of-tailrec-annotation-example-tutorial-source-code-how-sample-program",
         "feed": {
             "type": "feed",
-            "key": "http://masteringlync.com/feed/",
-            "title": "Mastering Lync",
-            "img": "http://imagecdn.getprismatic.com/pub/16/-2341018465017113186.ico"
+            "key": "www.guruzon.com",
+            "title": "Interview",
+            "img": "http://imagecdn.getprismatic.com/pub/16/7241885605401218852.png",
+            "highres-img": "http://imagecdn.getprismatic.com/pub/big/7241885605401218852.png"
         },
-        "prismatic-shares": [],
+        "prismatic-shares": [
+            [
+                {
+                    "display-key": "kunlqt",
+                    "key": 40623,
+                    "name": "Kun Le",
+                    "title": "kunlqt",
+                    "img": "http://a0.twimg.com/profile_images/2394083213/image_bigger.jpg",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["click", "bookmark", "share"],
+                    "score": 2.8E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "JoshARhoads",
+                    "key": 20106,
+                    "name": "josh rhoads",
+                    "title": "JoshARhoads",
+                    "img": "http://a0.twimg.com/profile_images/1747945054/image1326291605_bigger.png",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["bookmark"],
+                    "score": 1.0E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "phoenix24",
+                    "key": 2136,
+                    "name": "Chaitanya Sharma",
+                    "title": "phoenix24",
+                    "img": "http://a0.twimg.com/profile_images/182556917/test_bigger.JPG",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["bookmark"],
+                    "score": 1.0E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "naragon",
+                    "key": 7953,
+                    "name": "naragon",
+                    "title": "naragon",
+                    "img": "http://a0.twimg.com/profile_images/801741986/image_bigger.jpg",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["click", "save"],
+                    "score": 5.500000000000001E-10,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "genetani",
+                    "key": 20232,
+                    "name": "gene tani",
+                    "title": "genetani",
+                    "img": "http://a0.twimg.com/profile_images/3398488602/9d47f8abf848e8b7754c928ea9aae159_bigger.png",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["save"],
+                    "score": 3.5E-10,
+                    "following?": false
+                }
+            ]
+        ],
         "comments": [],
         "user-share-ids": {},
-        "id": 1383013484805,
+        "id": 1383208757368,
         "home-interests": [
             {
                 "type": "topic",
@@ -150,57 +262,68 @@
             },
             {
                 "type": "topic",
-                "key": "Database"
+                "key": "Scala (programming language)"
             }
         ],
-        "num-shares": 12,
+        "num-shares": 39,
         "topics": [
+            {
+                "type": "topic",
+                "key": "Scala (programming language)",
+                "title": "Scala (programming language)"
+            },
             {
                 "type": "topic",
                 "key": "Programming",
                 "title": "Programming"
-            },
-            {
-                "type": "topic",
-                "key": "Database",
-                "title": "Database"
             }
         ]
     },
     {
-        "text": "Regardless of what you might think of the ubiquity of the \"Big Data\" meme, it's clear that the growing size of datasets is changing the way we approach the world around us. This is true in fields from industry to government to media to academia and virtually everywhere in between. Our increasing abilities to gather, process, visualize, and learn from large datasets is helping to push the boundaries of our knowledge.\n\nBut where scientific research is concerned, this recently accelerated shift to data-centric science has a dark side, which boils down to this: the skills required to be a successful scientific researcher are increasingly indistinguishable from the skills required to be successful in industry. While academia, with typical inertia, gradually shifts to accommodate this, the rest of the world has already begun to embrace and reward these skills to a much greater degree. The unfortunate result is that some of the most promising upcoming researchers are finding no place for themselves...",
-        "date": 1382792400000,
+        "text": "Are you one of the many people who complain that they are overworked, overloaded and over-stressed? Although they work hard every day, these people find that they never seem to get ahead. Tasks just keep piling up. What can you do if you are in this situation? Here is a seven point plan to sort the problem.1.  Prioritize, prioritize, prioritize.  Revise your to-do list every day. Identify the really important things that must be done soon. Make sure that you tackle these first every day. Highly effective people plan their work and then work their plan. They make sure that they work first on the critical items and do not although themselves to get sidetracked with less important issues.2.  Agree your priorities with your boss. Sit down with your manager on a regular basis to discuss your workload and objectives, and get him or her to agree the top priorities. Once they have agreed you can say something like,\u201CI am glad we agree. I will prioritize and deliver these items, but it does mean...",
+        "date": 1383237483780,
         "prismatic-activity": {
-            "save": 5,
-            "share": 2,
-            "email": 1,
-            "bookmark": 3,
-            "click": 29
+            "share": 1,
+            "bookmark": 1,
+            "click": 8
         },
         "first-degree-connections": {
             "prismatic-actions": [],
             "external-actions": [],
             "interests": [
                 {
+                    "type": "feed",
+                    "key": "http://www.lifehack.org/feed",
+                    "title": "Lifehack",
+                    "img": "http://imagecdn.getprismatic.com/pub/16/7161234822593465051.ico",
+                    "highres-img": "http://imagecdn.getprismatic.com/pub/big/7161234822593465051.png"
+                },
+                {
                     "type": "topic",
-                    "key": "Data Mining",
-                    "title": "Data Mining"
+                    "key": "Productivity",
+                    "title": "Productivity"
+                },
+                {
+                    "type": "topic",
+                    "key": "Time",
+                    "title": "Time"
                 }
             ]
         },
         "images": [],
         "author": {
-            "name": "Jake Vanderplas",
-            "url": null
+            "url": "http://www.lifehack.org/articles/author/paul-sloane",
+            "name": "Paul Sloane"
         },
         "commerce": null,
-        "title": "The Big Data Brain Drain: Why Science is in Trouble",
-        "url": "http://jakevdp.github.io/blog/2013/10/26/big-data-brain-drain/",
+        "title": "Overloaded at Work? Here's How to Cope.",
+        "url": "http://www.lifehack.org/articles/work/overloaded-work-heres-how-cope.html",
         "feed": {
             "type": "feed",
-            "key": "http://jakevdp.github.io/atom.xml",
-            "title": "Pythonic Perambulations",
-            "img": "http://imagecdn.getprismatic.com/pub/16/-4699683354746685017.ico"
+            "key": "http://www.lifehack.org/feed",
+            "title": "Lifehack",
+            "img": "http://imagecdn.getprismatic.com/pub/16/7161234822593465051.ico",
+            "highres-img": "http://imagecdn.getprismatic.com/pub/big/7161234822593465051.png"
         },
         "prismatic-shares": [
             [
@@ -220,11 +343,223 @@
             ],
             [
                 {
-                    "display-key": "agramfort",
-                    "key": 7973,
-                    "name": "Alexandre Gramfort",
-                    "title": "agramfort",
-                    "img": "http://a0.twimg.com/profile_images/1141746780/mini_gotlieb3_bigger.png",
+                    "display-key": "shakyamunni24",
+                    "key": 203096,
+                    "name": "Jose L. Casanova",
+                    "title": "shakyamunni24",
+                    "img": "http://cdn.getprismatic.com/cdn/img/profile/default_avatar3.jpg",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["bookmark"],
+                    "score": 1.0E-9,
+                    "following?": false
+                }
+            ]
+        ],
+        "comments": [],
+        "user-share-ids": {},
+        "id": 1383237481151,
+        "home-interests": [
+            {
+                "type": "topic",
+                "key": "Time"
+            },
+            {
+                "type": "topic",
+                "key": "Productivity"
+            },
+            {
+                "type": "feed",
+                "key": "http://www.lifehack.org/feed"
+            }
+        ],
+        "num-shares": 36,
+        "topics": [
+            {
+                "type": "topic",
+                "key": "Productivity",
+                "title": "Productivity"
+            },
+            {
+                "type": "topic",
+                "key": "Time",
+                "title": "Time"
+            }
+        ]
+    },
+    {
+        "text": "One of the great things about working in open source development is working with other experts round the work on big projects \u2013 and then having the results of that work in the hands of users within a short period of time.\n\nThis is why I\u2019m really excited about the Rackspace announcement of their HDP-based Big Data offerings, both \u201Con-prem\u201D and in cloud. Not just because its partners of us offering a service based on Hadoop, but because it shows how Hadoop integration with OpenStack has reached a point where it\u2019s ready for production use. And because to get to that state the Hadoop and OpenStack development communities had to work together.\n\nI can only vouch for one part of the collaboration, the OpenStack Swift FileSystem client for Apache Hadoop. As customers run their applications in the public cloud, object stores like Swift are being used for data backup and long term archival. This new client allows Hadoop applications \u2013 including MapReduce, Pig and Hive Queries to work with data stored...",
+        "date": 1383289070823,
+        "prismatic-activity": {
+            "save": 1,
+            "email": 1,
+            "bookmark": 2,
+            "click": 8
+        },
+        "first-degree-connections": {
+            "prismatic-actions": [],
+            "external-actions": [],
+            "interests": [
+                {
+                    "type": "topic",
+                    "key": "Distributed Computing",
+                    "title": "Distributed Computing"
+                }
+            ]
+        },
+        "images": [
+            {
+                "in-div": true,
+                "orig-size": {
+                    "height": "450",
+                    "width": "613"
+                },
+                "size": {
+                    "width": 1280,
+                    "height": 936
+                },
+                "url": "http://hortonworks.com/wp-content/uploads/2013/10/openstack.png"
+            }
+        ],
+        "author": {
+            "name": "Steve Loughran",
+            "url": "http://hortonworks.com/blog/author/steve_loughran/"
+        },
+        "commerce": null,
+        "title": "OpenStack: why it's so great to see HDP in Rackspace cloud",
+        "url": "http://hortonworks.com/blog/openstack-why-its-so-great-to-see-hdp-in-rackspace-cloud/",
+        "feed": {
+            "type": "feed",
+            "key": "http://feeds.feedburner.com/hortonworks/feed",
+            "title": "Hortonworks",
+            "img": "http://imagecdn.getprismatic.com/pub/16/-3152678537459327137.ico"
+        },
+        "prismatic-shares": [
+            [
+                {
+                    "display-key": "wattersjames",
+                    "key": 34112,
+                    "name": "James Watters",
+                    "title": "wattersjames",
+                    "img": "http://a0.twimg.com/profile_images/3335647879/cf6b3734ce74d5eba1ce9bbe9f677e82_bigger.jpeg",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["bookmark"],
+                    "score": 1.0E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "dougb",
+                    "key": 134114,
+                    "name": "Doug Balog",
+                    "title": "dougb",
+                    "img": "http://cdn.getprismatic.com/cdn/img/profile/default_avatar3.jpg",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["bookmark"],
+                    "score": 1.0E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "jayshen",
+                    "key": 109245,
+                    "name": "Jay Shen",
+                    "title": "jayshen",
+                    "img": "http://graph.facebook.com/jay8shen/picture?type=large",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["click"],
+                    "score": 2.0000000000000003E-10,
+                    "following?": false
+                }
+            ]
+        ],
+        "comments": [],
+        "user-share-ids": {},
+        "id": 1383164764764,
+        "home-interests": [
+            {
+                "type": "topic",
+                "key": "Distributed Computing"
+            }
+        ],
+        "num-shares": 14,
+        "topics": [
+            {
+                "type": "topic",
+                "key": "Distributed Computing",
+                "title": "Distributed Computing"
+            },
+            {
+                "type": "topic",
+                "key": "Storage",
+                "title": "Storage"
+            }
+        ]
+    },
+    {
+        "text": "Remember your mom sorting through your Halloween candy as a kid, looking for signs of \u2018tainted\u2019 candy laced with poison, needles or razor blades? It turns out, unless she was just using it as an excuse to steal the good candy before you got it, she was wasting her time. You are more likely to get attacked by a samurai sword wielding bear while trick or treating than be poisoned by a stranger. Further, it\u2019s more likely that your Halloween candy will be poisoned or otherwise tampered with by one of your parents or family members, than a stranger. Think about that while your mom is \u201Cchecking out\u201D your candy before letting you eat it.\n\nSo why all the worry? Because the news media needs something to talk about and there\u2019s nothing better for ratings than saying something like \u201CIs your child\u2019s Halloween candy poisoned? Find out the deadly truth at 11!\u201D Further, while many children die directly after Halloween from non-candy related things (after all, people die every day), if there isn\u2019t an apparent...",
+        "date": 1383249600180,
+        "prismatic-activity": {
+            "share": 1,
+            "click": 17
+        },
+        "first-degree-connections": {
+            "prismatic-actions": [],
+            "external-actions": [],
+            "interests": [
+                {
+                    "key": "ant",
+                    "type": "raw",
+                    "title": "ant",
+                    "since": 1365269716463
+                }
+            ]
+        },
+        "images": [
+            {
+                "in-div": false,
+                "orig-size": {
+                    "height": "546",
+                    "width": "970"
+                },
+                "size": {
+                    "width": 970,
+                    "height": 546
+                },
+                "url": "http://img.gawkerassets.com/img/194qe7ctn9b3gjpg/ku-bigpic.jpg"
+            }
+        ],
+        "author": {
+            "name": "Staci Lehman - Today I Found Out",
+            "url": null
+        },
+        "commerce": null,
+        "title": "Has Anyone Ever Actually Poisoned or Put Razors in Halloween Candy?",
+        "url": "http://gizmodo.com/has-anyone-ever-actually-poisoned-or-put-razors-in-hall-1454295786",
+        "feed": {
+            "type": "feed",
+            "key": "http://feeds.gawker.com/gizmodo/full",
+            "title": "Gizmodo",
+            "img": "http://imagecdn.getprismatic.com/pub/16/-4200383545842482424.ico",
+            "highres-img": "http://imagecdn.getprismatic.com/pub/big/-4200383545842482424.png"
+        },
+        "prismatic-shares": [
+            [
+                {
+                    "display-key": "rossvegas",
+                    "key": 113206,
+                    "name": "Ross Vegas",
+                    "title": "rossvegas",
+                    "img": "http://graph.facebook.com/therealrossvegas/picture?type=large",
                     "type": "activity"
                 },
                 {
@@ -235,209 +570,40 @@
             ],
             [
                 {
-                    "display-key": "tomdoub",
-                    "key": 161928,
-                    "name": "Tom Doub",
-                    "title": "tomdoub",
-                    "img": "http://a0.twimg.com/profile_images/2219329059/headshot_bigger.JPG",
+                    "display-key": "uxking",
+                    "key": 113419,
+                    "name": "Michael Hayslip",
+                    "title": "uxking",
+                    "img": "http://graph.facebook.com/michael.hayslip/picture?type=large",
                     "type": "activity"
                 },
                 {
-                    "actions": ["bookmark"],
-                    "score": 1.0E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "doctorbunsen",
-                    "key": 16304,
-                    "name": "Seth Brown",
-                    "title": "doctorbunsen",
-                    "img": "http://a0.twimg.com/profile_images/3394416205/093636960e8ce95534a4fafe0be40946_bigger.png",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["bookmark"],
-                    "score": 1.0E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "sgourley",
-                    "key": 3281,
-                    "name": "Sean Gourley",
-                    "title": "sgourley",
-                    "img": "http://a0.twimg.com/profile_images/125801766/Sean_psV5_bigger.jpg",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["bookmark"],
-                    "score": 1.0E-9,
+                    "actions": ["click"],
+                    "score": 2.0000000000000003E-10,
                     "following?": false
                 }
             ]
         ],
         "comments": [],
         "user-share-ids": {},
-        "id": 1382886044412,
+        "id": 1383250482910,
         "home-interests": [
             {
-                "type": "topic",
-                "key": "Software development process"
-            },
-            {
-                "type": "topic",
-                "key": "Data Mining"
+                "type": "raw",
+                "key": "ant"
             }
         ],
-        "num-shares": 409,
+        "num-shares": 125,
         "topics": [
             {
                 "type": "topic",
-                "key": "Data Mining",
-                "title": "Data Mining"
+                "key": "Halloween",
+                "title": "Halloween"
             },
             {
                 "type": "topic",
-                "key": "Research",
-                "title": "Research"
-            }
-        ]
-    },
-    {
-        "text": "In the broadest possible definition, Big Data is exactly what its name implies, that is, very large sets of data, usually more than 10 terabytes and sometimes as much as several petabytes. A single terabyte is the equivalent of 472 hours of broadcast-quality video or the number of words that every single adult in the U.S. speaking at the same time could say in five minutes. A petabyte is about 1,000 times larger, enough memory to store the DNA of the entire population of the U.S. and then clone everyone-- twice. \u201CIs that a lot of data? Yes, but you will be surprised at how fast you collect data these days,\u201D says Samer Forzley, vice president of marketing at Pythian, a global provider of data management consulting and services. \u201CBy collecting everything from website visits and server log files to external data such as social media activity, a company can quickly accumulate large amounts of data.\u201D A typical small or medium-sized business deals with a number of sources of data-- customer information,...",
-        "date": 1382998435267,
-        "prismatic-activity": {
-            "click": 3
-        },
-        "first-degree-connections": {
-            "prismatic-actions": [],
-            "external-actions": [],
-            "interests": [
-                {
-                    "type": "topic",
-                    "key": "Cloud Computing",
-                    "title": "Cloud Computing"
-                }
-            ]
-        },
-        "images": [],
-        "author": null,
-        "commerce": null,
-        "title": "What Is \"Big Data\"?",
-        "url": "http://www.inc.com/comcast/what-is-big-data.html",
-        "feed": {
-            "type": "feed",
-            "key": "http://feeds.inc.com/home/updates",
-            "title": "Inc.com",
-            "img": "http://imagecdn.getprismatic.com/pub/16/-529809303625520382.ico",
-            "highres-img": "http://imagecdn.getprismatic.com/pub/big/-529809303625520382.png"
-        },
-        "prismatic-shares": [],
-        "comments": [],
-        "user-share-ids": {},
-        "id": 1382998431551,
-        "home-interests": [
-            {
-                "type": "topic",
-                "key": "Cloud Computing"
-            }
-        ],
-        "num-shares": 7,
-        "topics": [
-            {
-                "type": "topic",
-                "key": "Cloud Computing",
-                "title": "Cloud Computing"
-            },
-            {
-                "type": "topic",
-                "key": "IBM",
-                "title": "IBM"
-            }
-        ]
-    },
-    {
-        "text": "The Internet Archive is the repository of the digital world\u2019s artifacts. Along with the huge library of archived webpages, ebooks, movies, and music, it now offers an in-browser emulator that will allow you to run classic games and old programs inside the browser. So, if you get hit by nostalgia you can fire it up and play classic games like PAC-MAN, Adventureland, and The Hobbit among others. The not-for-profit organization has also curated the Historical Software Collection, with selective picks of historically significant software in one place.The rapid pace set by technology makes applications and games obsolete very fast; sometimes, even before you can appreciate it fully. Some become collector\u2019s items and inaccessible to the general public. The Javascript MESS emulator introduced by the Internet Archive just needs a browser to dial back the time for you. If you started learning on something like WordStar or Visicalc, then your wish to try them out for old time\u2019s sake could be answered...",
-        "date": 1382974475156,
-        "prismatic-activity": {
-            "save": 2,
-            "click": 5
-        },
-        "first-degree-connections": {
-            "prismatic-actions": [],
-            "external-actions": [],
-            "interests": [
-                {
-                    "type": "topic",
-                    "key": "Computer Software",
-                    "title": "Computer Software"
-                }
-            ]
-        },
-        "images": [
-            {
-                "in-div": 1,
-                "orig-size": {},
-                "size": {
-                    "width": 640,
-                    "height": 365
-                },
-                "url": "http://main.makeuseoflimited.netdna-cdn.com/wp-content/uploads/2013/10/emulator.jpg"
-            }
-        ],
-        "author": {
-            "name": "Saikat Basu",
-            "url": "http://www.makeuseof.com/tag/author/saikatbasu/"
-        },
-        "commerce": null,
-        "title": "Use Your Browser To Play With Classic Games And Vintage Software On The Internet Archive",
-        "url": "http://www.makeuseof.com/tag/use-your-browser-to-play-with-classic-games-and-vintage-software-on-the-internet-archive/",
-        "feed": {
-            "type": "feed",
-            "key": "http://feeds.feedburner.com/makeuseof",
-            "title": "MakeUseOf",
-            "img": "http://imagecdn.getprismatic.com/pub/16/-4480613280694871212.ico"
-        },
-        "prismatic-shares": [
-            [
-                {
-                    "display-key": "tlovall",
-                    "key": 196784,
-                    "name": "Timothy Lovall",
-                    "title": "tlovall",
-                    "img": "http://graph.facebook.com/1793599845/picture?type=large",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["save"],
-                    "score": 3.5E-10,
-                    "following?": false
-                }
-            ]
-        ],
-        "comments": [],
-        "user-share-ids": {},
-        "id": 1382974473763,
-        "home-interests": [
-            {
-                "type": "topic",
-                "key": "Computer Software"
-            }
-        ],
-        "num-shares": 33,
-        "topics": [
-            {
-                "type": "topic",
-                "key": "Computer Software",
-                "title": "Computer Software"
-            },
-            {
-                "type": "topic",
-                "key": "Gaming",
-                "title": "Gaming"
+                "key": "Poisoning and Poisons",
+                "title": "Poisoning and Poisons"
             }
         ]
     }

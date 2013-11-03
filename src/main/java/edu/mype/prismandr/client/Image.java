@@ -7,6 +7,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.net.URL;
 
 /**
  * @author Vitaliy Gerya
@@ -19,7 +20,7 @@ public class Image {
     @XmlElement(name = "orig-size")
     private Size originalSize;
     private Size size;
-    private String url;
+    private URL url;
     private double prob;
 
     public Image() {
@@ -49,11 +50,11 @@ public class Image {
         this.size = size;
     }
 
-    public String getUrl() {
+    public URL getUrl() {
         return url;
     }
 
-    public void setUrl(String url) {
+    public void setUrl(URL url) {
         this.url = url;
     }
 

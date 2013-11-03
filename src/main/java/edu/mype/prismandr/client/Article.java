@@ -7,6 +7,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -30,7 +31,7 @@ public class Article {
     private Author author;
     private String commerce;
     private String title;
-    private String url;
+    private URL url;
     private Feed feed;
     @XmlElement(name = "prismatic-shares")
     private List<List<Object>> prismaticShares = new LinkedList<>();
@@ -46,7 +47,7 @@ public class Article {
     public Article() {
     }
 
-    public Article(long id, String text, long date, Item related, Activity activity, Connection firstDegreeConnections, List<Image> images, Author author, String commerce, String title, String url, Feed feed, List<List<Object>> prismaticShares, List<Comment> comments, Share userShareIds, List<Item> homeInterests, long numShares, List<TitledItem> topics) {
+    public Article(long id, String text, long date, Item related, Activity activity, Connection firstDegreeConnections, List<Image> images, Author author, String commerce, String title, URL url, Feed feed, List<List<Object>> prismaticShares, List<Comment> comments, Share userShareIds, List<Item> homeInterests, long numShares, List<TitledItem> topics) {
         this.id = id;
         this.text = text;
         this.date = date;
@@ -147,11 +148,11 @@ public class Article {
         this.title = title;
     }
 
-    public String getUrl() {
+    public URL getUrl() {
         return url;
     }
 
-    public void setUrl(String url) {
+    public void setUrl(URL url) {
         this.url = url;
     }
 
@@ -246,7 +247,7 @@ public class Article {
         private Author author;
         private String commerce;
         private String title;
-        private String url;
+        private URL url;
         private Feed feed;
         private List<List<Object>> prismaticShares = new ArrayList<>();
         private List<Comment> comments;
@@ -305,7 +306,7 @@ public class Article {
             return this;
         }
 
-        public ArticleBuilder setUrl(String url) {
+        public ArticleBuilder setUrl(URL url) {
             this.url = url;
             return this;
         }

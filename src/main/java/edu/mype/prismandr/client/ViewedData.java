@@ -10,11 +10,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * @author Vitaliy Gerya
- *         <p/>
- *         "viewed-data":[
- *         {"doc-id":1382993499230,"feed-id":"news415024_51037420","dwell":0},
- *         {"doc-id":1383033721870,"feed-id":"news415024_51037420","dwell":0},
- *         {"doc-id":1382958106756,"feed-id":"news415024_51037420","dwell":0}]
  */
 @XmlRootElement(name = "viewed-data")
 @XmlAccessorType(XmlAccessType.FIELD)
