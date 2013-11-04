@@ -96,7 +96,7 @@ public class PrismaticServiceShould {
                         user, userShareAction)
                 .createArticle());
 
-        System.out.println(json);
+        assertThat(json).isNotNull().isNotEmpty().contains("username").contains("UsEr").contains("maxdbass");
     }
 
     @Test
@@ -105,7 +105,7 @@ public class PrismaticServiceShould {
 
         Post post = service.fetch(session);
 
-        System.out.println(post);
+        assertThat(post).isNotNull();
     }
 
     @Test
@@ -114,11 +114,13 @@ public class PrismaticServiceShould {
 
         Post post = service.fetch(session);
 
+        assertThat(post).as("First requested post").isNotNull();
+
         NextRequest next = post.getNext();
 
         post = service.fetch(session, next);
 
-        System.out.println(post);
+        assertThat(post).as("Second requested post").isNotNull();
     }
 
     @Test
