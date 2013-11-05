@@ -1,5 +1,6 @@
 package edu.mype.prismandr.client;
 
+import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.jaxrs.JacksonJaxbJsonProvider;
 import org.glassfish.jersey.client.ClientConfig;
 import org.slf4j.Logger;
@@ -9,6 +10,7 @@ import javax.ws.rs.client.*;
 import javax.ws.rs.core.Cookie;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -86,6 +88,17 @@ public class PrismaticService {
         response.close();
 
         return post;
+    }
+
+    public static String convertToJson(Object value) throws IOException {
+        JacksonJaxbJsonProvider provider = new JacksonJaxbJsonProvider();
+        provider.configure(JsonGenerator.Feature.QUOTE_NON_NUMERIC_NUMBERS, false);
+        provider.configure(JsonGenerator.Feature.QUOTE_FIELD_NAMES, true);
+        try (ByteArrayOutputStream baos = new ByteArrayOutputStream();) {
+            provider.writeTo(value, value
+                    .getClass(), null, null, MediaType.APPLICATION_JSON_TYPE, null, baos);
+            return new String(baos.toByteArray());
+        }
     }
 
     private Invocation.Builder appendCookies(Session session, Invocation.Builder request) {

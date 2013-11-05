@@ -31,6 +31,8 @@ dependencies {
     compile 'org.slf4j:slf4j-api:1.7.5'
     compile 'ch.qos.logback:logback-classic:1.0.13'
 
+    compile 'com.google.inject:guice:4.0-beta'
+
 
     testCompile 'junit:junit:4.11'
     testCompile 'org.easytesting:fest-assert-core:2.0M10'

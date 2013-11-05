@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="javax.json-1.0.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.2/e8a419fdc37481f2b54c6b711eb36708b70a204b/javax.json-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.2/1dc65c4e13edfe5e17076e635b94e2694565aa8d/javax.json-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.2/b5c4fa3e6ad20ede4fb81bf383056c2ab985325/javax.json-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

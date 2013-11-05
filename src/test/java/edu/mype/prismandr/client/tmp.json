@@ -4,76 +4,35 @@
     "title": "Home",
     "type": "personal"
 }, "next": {
-    "remaining-count": 495,
+    "remaining-count": 490,
     "query-params": {
         "subpage": "true",
-        "last-feed-id": "news183728_24896139",
-        "first-article-idx": 0,
-        "last-article-idx": 5
+        "last-feed-id": "news407277_56802790",
+        "first-article-idx": 5,
+        "last-article-idx": 10
     }
-}, "removed": {
-    "remaining-count": 182
-}, "related-interests": {
-    "interests": {
-        "url": "/user/interests/interests?api-version=1.0",
-        "title": "Interests",
-        "count": 135
-    },
-    "following": {
-        "url": "/user/interests/following?api-version=1.0",
-        "title": "Following",
-        "count": 18
-    }
-}, "id": "news183728_24896139", "start": 0, "docs": [
+}, "id": "news407277_56802790", "start": 5, "docs": [
     {
         "related": {
             "type": "related",
-            "key": 1383275497540
+            "key": 1383499548260
         },
-        "text": "Canada-based telecom Nortel went bankrupt in 2009 and sold its biggest asset\u2014a portfolio of more than 6,000 patents covering 4G wireless innovations and a range of technologies\u2014at an auction in 2011.\n\nGoogle bid for the patents, but didn't get them. Instead, they went to a group of competitors\u2014Microsoft, Apple, RIM, Ericsson, and Sony\u2014operating under the name \"Rockstar Bidco.\" The companies together bid the shocking sum of $4.5 billion.\n\nPatent insiders knew that the Nortel portfolio was the patent equivalent of a nuclear stockpile: dangerous in the wrong hands, and a bit scary even if held by a \"responsible\" party.\n\nThis afternoon, that stockpile was finally used for what pretty much everyone suspected it would be used for\u2014launching an all-out patent attack on Google and Android. The smartphone patent wars have been underway for a few years now, and the eight lawsuits filed in federal court today by Rockstar Consortium mean that the conflict just hit DEFCON 1.  Google probably knew this...",
-        "date": 1383264000000,
+        "text": "If you\u2019re looking to learn how the worlds TOM Shoes and Warby Parker\u2019s are created, or thinking about creating a consumer brand committed to helping the disadvantaged, then this article is for you. We\u2019ve compiled together some serious wisdom from successful entrepreneurs who\u2019ve grown their ventures into huge successes. We spoken to some of these entrepreneurs about  the challenges they faced and the failures they encountered, to how they got on to the path to phenomenal success.\n\nNathan Rothstein the founder of Project Repat started with a noble cause of upcycling t-shirts into new products with an aim to reduce the environmental impact of discarded t-shirts and to create fair jobs in the US. You can read their entire story of how they got started and slowly evolved their idea unitil they achieved the right product market fit. Project Repat recently crossed a million dollars in revenue in just over a year which is far cry from just a year ago when they were struggling and going nowhere.\n\nThis...",
+        "date": 1383499563340,
         "prismatic-activity": {
-            "save": 2,
-            "remove": 4,
-            "share": 1,
-            "bookmark": 5,
-            "click": 63
+            "save": 4,
+            "remove": 2,
+            "bookmark": 3,
+            "click": 17
         },
         "first-degree-connections": {
             "prismatic-actions": [],
-            "external-actions": [
-                {
-                    "type": "twitter",
-                    "id": "396157731486183424",
-                    "user": {
-                        "url": "https://twitter.com/mentalguy",
-                        "name": "mentalguy",
-                        "title": "mentalguy",
-                        "key": 14358152,
-                        "type": "twitter",
-                        "img": "http://pbs.twimg.com/profile_images/54896192/avatar-100x100_normal.png"
-                    },
-                    "date": 1383286338000
-                },
-                {
-                    "type": "twitter",
-                    "id": "396214354078883840",
-                    "user": {
-                        "url": "https://twitter.com/rickasaurus",
-                        "name": "rickasaurus",
-                        "title": "rickasaurus",
-                        "key": 16377511,
-                        "type": "twitter",
-                        "img": "http://pbs.twimg.com/profile_images/2180469639/IphkXI-flipped_normal.png"
-                    },
-                    "date": 1383299837000
-                }
-            ],
+            "external-actions": [],
             "interests": [
                 {
                     "type": "topic",
-                    "key": "Innovation",
-                    "title": "Innovation"
+                    "key": "Startups",
+                    "title": "Startups"
                 }
             ]
         },
@@ -81,68 +40,65 @@
             {
                 "in-div": true,
                 "orig-size": {
-                    "height": "426",
-                    "width": "640"
+                    "height": "450",
+                    "width": "800"
                 },
                 "size": {
-                    "width": 640,
-                    "height": 426
+                    "width": 800,
+                    "height": 450
                 },
-                "url": "http://cdn.arstechnica.net/wp-content/uploads/2013/10/rockstar.photo_-640x426.jpg"
+                "url": "http://2-ps.googleusercontent.com/h/www.dutiee.com/wp-content/uploads/800x450xbofgood1.png.pagespeed.ic.By-dXzEZlN.jpg"
+            },
+            {
+                "prob": 0.6809084912271872,
+                "orig-size": {
+                    "height": "150",
+                    "width": "150"
+                },
+                "size": {
+                    "width": 150,
+                    "height": 150
+                },
+                "url": "http://2-ps.googleusercontent.com/h/www.dutiee.com/wp-content/uploads/deepa-150x150.jpg.pagespeed.ce.hPruUbcQxc.jpg",
+                "in-div": true
+            },
+            {
+                "prob": 0.4115513626636367,
+                "orig-size": {
+                    "height": "150",
+                    "width": "150"
+                },
+                "size": {
+                    "width": 150,
+                    "height": 150
+                },
+                "url": "http://2-ps.googleusercontent.com/h/www.dutiee.com/wp-content/uploads/deepa-150x150.jpg.pagespeed.ce.hPruUbcQxc.jpg",
+                "in-div": true
             }
         ],
         "author": {
-            "name": "Joe Mullin",
-            "url": "http://arstechnica.com/author/joe-mullin/"
+            "url": null,
+            "name": "Deepa Chaudhary"
         },
         "commerce": null,
-        "title": "Patent war goes nuclear: Microsoft, Apple-owned \u201CRockstar\u201D sues Google",
-        "url": "http://arstechnica.com/tech-policy/2013/10/patent-war-goes-nuclear-microsoft-apple-owned-rockstar-sues-google/",
+        "title": "Must Read Guide To The Business Of Doing Good",
+        "url": "http://www.dutiee.com/the-must-read-guide-to-the-business-of-doing-good",
         "feed": {
+            "key": "http://www.dutiee.com/feed",
             "type": "feed",
-            "key": "http://feeds.arstechnica.com/arstechnica/index/",
-            "title": "Ars Technica",
-            "img": "http://imagecdn.getprismatic.com/pub/16/-11388046325726796.ico",
-            "highres-img": "http://imagecdn.getprismatic.com/pub/big/-11388046325726796.png"
+            "title": "Dutiee",
+            "explain": ["twitter"],
+            "img": null,
+            "since": 1370583785062
         },
         "prismatic-shares": [
             [
                 {
-                    "display-key": "maxdbass",
-                    "key": 164243,
-                    "name": "Dimucci Hoodson",
-                    "title": "maxdbass",
-                    "img": "http://cdn.getprismatic.com/cdn/img/profile/default_avatar2.jpg",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["share"],
-                    "score": 1.6000000000000003E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "rathtrap",
-                    "key": 194081,
-                    "name": "rathtrap",
-                    "title": "rathtrap",
-                    "img": "http://cdn.getprismatic.com/cdn/img/profile/default_avatar3.jpg",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["click", "bookmark"],
-                    "score": 1.2E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "liamhiggins1000",
-                    "key": 126665,
-                    "name": "Liam Higgins",
-                    "title": "liamhiggins1000",
-                    "img": "http://graph.facebook.com/liam.higgins.54/picture?type=large",
+                    "display-key": "conikeec",
+                    "key": 900,
+                    "name": "chetan conikee",
+                    "title": "conikeec",
+                    "img": "http://a0.twimg.com/profile_images/615111515/pic_bigger.jpg",
                     "type": "activity"
                 },
                 {
@@ -153,11 +109,11 @@
             ],
             [
                 {
-                    "display-key": "erickoetsch",
-                    "key": 166705,
-                    "name": "Eric Koetsch",
-                    "title": "erickoetsch",
-                    "img": "http://cdn.getprismatic.com/cdn/img/profile/default_avatar0.jpg",
+                    "display-key": "ruici",
+                    "key": 68921,
+                    "name": "Ruici Tio",
+                    "title": "ruici",
+                    "img": "http://a0.twimg.com/profile_images/250691474/DSC_1965_2_bigger.jpg",
                     "type": "activity"
                 },
                 {
@@ -168,11 +124,11 @@
             ],
             [
                 {
-                    "display-key": "f14m3boy7",
-                    "key": 60058,
-                    "name": "Perry Wong",
-                    "title": "f14m3boy7",
-                    "img": "http://a0.twimg.com/sticky/default_profile_images/default_profile_2_bigger.png",
+                    "display-key": "IdeasHoist",
+                    "key": 159482,
+                    "name": "Ideas Hoist",
+                    "title": "IdeasHoist",
+                    "img": "http://a0.twimg.com/profile_images/2381515955/ulapfy7zaajvo3ve2lzq_bigger.png",
                     "type": "activity"
                 },
                 {
@@ -184,45 +140,37 @@
         ],
         "comments": [],
         "user-share-ids": {},
-        "id": 1383275497540,
+        "id": 1383499548260,
         "home-interests": [
             {
-                "type": "prismatic-social",
-                "key": "-default-"
-            },
-            {
                 "type": "topic",
-                "key": "Innovation"
+                "key": "Startups"
             }
         ],
-        "num-shares": 1517,
+        "num-shares": 53,
         "topics": [
             {
                 "type": "topic",
-                "key": "Inventions and Patents",
-                "title": "Inventions and Patents"
+                "key": "Startups",
+                "title": "Startups"
             },
             {
                 "type": "topic",
-                "key": "Samsung Group",
-                "title": "Samsung Group"
+                "key": "Entrepreneurship",
+                "title": "Entrepreneurship"
             }
         ]
     },
     {
-        "related": {
-            "type": "related",
-            "key": 1383229837357
-        },
-        "text": "If you\u2019re involved in enterprise IT you\u2019ve undoubtedly seen one of Gartner\u2019s \u201CMagic Quadrant\u201D charts.  They cover everything from security software, to business intelligence, to data center networking. In every Magic Quadrant, you find the most attractive companies\u2014the visionaries and market disruptors\u2014in the top right hand corner. Vendors refer to these charts to explain their market opportunity; prospective buyers use them to select vendors. Gartner does not decide the future of technology, but the firm certainly documents it.  The significance of Gartner\u2019s work is why the recent Gartner Magic Quadrant chart on Infrastructure as a Service (Iaas) market should terrify the shareholders of companies such as HP, IBM, and Microsoft: Source: Gartner Magic Quadrant for Cloud Infrastructure as a Service I believe this chart is the most important chart in enterprise IT. It covers the new trend of IaaS, where instead of buying storage, operating systems, deployed applications, and other infrastructure,...",
-        "date": 1383229838491,
+        "text": "\u2026for developing your core domain\u2026 and most of the sub domains\u2026 For years I have been wondering what defines a senior programmer, what makes her not a junior anymore. Is it the \u201C10 years of .NET or Jave experience\u201D that she has or is it her degree and certifications? The number of projects she has worked on? I have seen so many highly talented programmers with amazing skills that still where called juniors, as well as dilettantes in suits that got payed as seniors and everything in between and vice versa. Somehow it seemed rather random or loosely coupled to the picture the developer had of herself.\n\nAnd then it struck me. In april I attended Vaughn Vernons IDDDTour in Belgium to learn all the secrets from Vaughn and other present experts about practising Domain Driven Design. But unlike a usual workshop the room was not filled with sponges that wanted to soak the wisdom from a few outstanding individuals.\n\nIDDDTour Attendees It was filled with ~70 passionate expert developers that actually...",
+        "date": 1383608452669,
         "prismatic-activity": {
-            "save": 3,
-            "remove": 3,
-            "share": 4,
+            "save": 10,
+            "remove": 10,
+            "share": 3,
             "email": 1,
-            "bookmark": 4,
-            "click": 46
+            "bookmark": 14,
+            "click": 189
         },
         "first-degree-connections": {
             "prismatic-actions": [],
@@ -230,170 +178,13 @@
             "interests": [
                 {
                     "type": "topic",
-                    "key": "Cloud Computing",
-                    "title": "Cloud Computing"
-                }
-            ]
-        },
-        "images": [
-            {
-                "in-div": true,
-                "orig-size": {
-                    "height": "575",
-                    "width": "575"
-                },
-                "size": {
-                    "width": 575,
-                    "height": 575
-                },
-                "url": "http://www.scalevp.com/wp-content/uploads/2013/10/IaaSMQ.png"
-            }
-        ],
-        "author": null,
-        "commerce": null,
-        "title": "The most important chart in enterprise IT",
-        "url": "http://www.scalevp.com/the-most-important-chart-in-enterprise-it",
-        "feed": {
-            "type": "feed",
-            "key": "http://www.scalevp.com/feed",
-            "title": "Scale Venture Partners",
-            "img": null
-        },
-        "prismatic-shares": [
-            [
-                {
-                    "display-key": "alex_mikhalev",
-                    "key": 18530,
-                    "name": "Alexander Mikhalev",
-                    "title": "alex_mikhalev",
-                    "img": "http://a0.twimg.com/sticky/default_profile_images/default_profile_3_bigger.png",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["share"],
-                    "score": 1.6000000000000003E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "c_makiyama",
-                    "key": 151593,
-                    "name": "Christos Makiyama",
-                    "title": "c_makiyama",
-                    "img": "http://a0.twimg.com/profile_images/1390814780/image_bigger.jpg",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["share"],
-                    "score": 1.6000000000000003E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "TheCloudNetwork",
-                    "key": 194889,
-                    "name": "The Cloud Network ",
-                    "title": "TheCloudNetwork",
-                    "img": "http://a0.twimg.com/profile_images/2347866598/n5wmf6tfgyuil6p59mg9_bigger.jpeg",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["share"],
-                    "score": 1.6000000000000003E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "skwiecien",
-                    "key": 18111,
-                    "name": "Sebastian Kwiecien",
-                    "title": "skwiecien",
-                    "img": "http://a0.twimg.com/profile_images/1220217859/DSC_3812-248px_bigger.png",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["share"],
-                    "score": 1.6000000000000003E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "wattersjames",
-                    "key": 34112,
-                    "name": "James Watters",
-                    "title": "wattersjames",
-                    "img": "http://a0.twimg.com/profile_images/3335647879/cf6b3734ce74d5eba1ce9bbe9f677e82_bigger.jpeg",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["bookmark"],
-                    "score": 1.0E-9,
-                    "following?": false
-                }
-            ]
-        ],
-        "comments": [],
-        "user-share-ids": {},
-        "id": 1383229837357,
-        "home-interests": [
-            {
-                "type": "topic",
-                "key": "Cloud Computing"
-            }
-        ],
-        "num-shares": 82,
-        "topics": [
-            {
-                "type": "topic",
-                "key": "Cloud Computing",
-                "title": "Cloud Computing"
-            },
-            {
-                "type": "topic",
-                "key": "Investing",
-                "title": "Investing"
-            },
-            {
-                "type": "topic",
-                "key": "Operations Research",
-                "title": "Operations Research"
-            },
-            {
-                "type": "topic",
-                "key": "Statistics",
-                "title": "Statistics"
-            }
-        ]
-    },
-    {
-        "text": "This post presents an analysis of MySQL (a relational database) and Neo4j  (a graph database) in a side-by-side comparison on a simple graph  traversal.\n\nThe data set that was used was an artificially generated  graph with natural statistics. The graph has 1 million vertices and 4  million edges. The degree distribution of this graph on a log-log plot is provided below. A visualization of a 1,000 vertex subset of the graph is diagrammed above.\n\nLoading the Graph The graph data set was loaded both into MySQL and Neo4j. In MySQL a single table was used with the following schema.CREATE TABLE graph (   outV INT NOT NULL,   inV INT NOT NULL ); CREATE INDEX outV_index USING BTREE ON graph (outV); CREATE INDEX inV_index USING BTREE ON graph (inV);After loading the data, the table appears as below. The first line reads: \u201Cvertex 0 is connected to vertex 1.\u201Dmysql> SELECT * FROM graph LIMIT 10; +------+-----+ | outV | inV | +------+-----+ |    0 |   1 | |    0 |   2 | |    0 |   6 | |    0 |   7 |...",
-        "date": 1383260928197,
-        "prismatic-activity": {
-            "save": 7,
-            "remove": 1,
-            "share": 1,
-            "email": 2,
-            "bookmark": 2,
-            "click": 29
-        },
-        "first-degree-connections": {
-            "prismatic-actions": [],
-            "external-actions": [],
-            "interests": [
-                {
-                    "type": "feed",
-                    "key": "http://feeds.dzone.com/javalobby/frontpage",
-                    "title": "Javalobby",
-                    "img": "http://imagecdn.getprismatic.com/pub/16/3941274210071077401.ico"
+                    "key": "Programming",
+                    "title": "Programming"
                 },
                 {
                     "type": "topic",
-                    "key": "NoSQL",
-                    "title": "NoSQL"
+                    "key": "Software Engineering",
+                    "title": "Software Engineering"
                 }
             ]
         },
@@ -401,182 +192,51 @@
             {
                 "in-div": true,
                 "orig-size": {
-                    "height": "267",
-                    "width": "267"
+                    "height": "225",
+                    "width": "300"
                 },
                 "size": {
-                    "width": 437,
-                    "height": 438
+                    "width": 300,
+                    "height": 225
                 },
-                "url": "http://markorodriguez.files.wordpress.com/2011/02/artificial-friends1.png?w=497"
+                "url": "http://www.heimeshoff.de/wordpress/wp-content/uploads/2013-04-22-10.45.531-300x225.jpg"
             },
             {
-                "url": "http://markorodriguez.files.wordpress.com/2011/02/points1.png?w=497&h=523",
-                "size": {
-                    "width": 497,
-                    "height": 523
-                },
+                "prob": 0.9942337477980318,
                 "orig-size": {
-                    "height": "523",
-                    "width": "497"
+                    "height": "483",
+                    "width": "610"
                 },
-                "prob": 0.3275994586369494,
+                "size": {
+                    "width": 663,
+                    "height": 483
+                },
+                "url": "http://www.heimeshoff.de/wordpress/wp-content/uploads/dreyfus_model.jpg",
+                "in-div": true
+            },
+            {
+                "prob": 0.3353996740525171,
+                "orig-size": {
+                    "height": "99",
+                    "width": "514"
+                },
+                "size": {
+                    "width": 514,
+                    "height": 99
+                },
+                "url": "http://www.heimeshoff.de/wordpress/wp-content/uploads/tweetAshton1.png",
                 "in-div": true
             }
         ],
         "author": null,
         "commerce": null,
-        "title": "MySQL vs. Neo4j on a Large-Scale Graph Traversal",
-        "url": "http://java.dzone.com/articles/mysql-vs-neo4j-large-scale",
+        "title": "Why you should only hire senior developers.",
+        "url": "http://www.heimeshoff.de/wordpress/?p=183",
         "feed": {
             "type": "feed",
-            "key": "http://feeds.dzone.com/javalobby/frontpage",
-            "title": "Javalobby",
-            "img": "http://imagecdn.getprismatic.com/pub/16/3941274210071077401.ico"
-        },
-        "prismatic-shares": [
-            [
-                {
-                    "display-key": "palexander",
-                    "key": 34461,
-                    "name": "Paul Alexander",
-                    "title": "palexander",
-                    "img": "http://a0.twimg.com/profile_images/2163416396/light_mug_square_bigger.png",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["share"],
-                    "score": 1.6000000000000003E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "vojko",
-                    "key": 144098,
-                    "name": "Vojimir Golem",
-                    "title": "vojko",
-                    "img": "http://cdn.getprismatic.com/cdn/img/profile/default_avatar3.jpg",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["bookmark"],
-                    "score": 1.0E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "flavianvasile",
-                    "key": 42586,
-                    "name": "Flavian Vasile",
-                    "title": "flavianvasile",
-                    "img": "http://graph.facebook.com/flavian.vasile/picture?type=large",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["bookmark"],
-                    "score": 1.0E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "marcospereira",
-                    "key": 33713,
-                    "name": "Marcos Pereira",
-                    "title": "marcospereira",
-                    "img": "http://a0.twimg.com/profile_images/1129192502/eu.pao.de.acucar_bigger.jpg",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["click"],
-                    "score": 2.0000000000000003E-10,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "lix",
-                    "key": 37428,
-                    "name": "Istvan Szukacs",
-                    "title": "lix",
-                    "img": "http://a0.twimg.com/profile_images/40120842/gp_08_bigger.jpg",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["click"],
-                    "score": 2.0000000000000003E-10,
-                    "following?": false
-                }
-            ]
-        ],
-        "comments": [],
-        "user-share-ids": {},
-        "id": 1383260926906,
-        "home-interests": [
-            {
-                "type": "topic",
-                "key": "NoSQL"
-            },
-            {
-                "type": "feed",
-                "key": "http://feeds.dzone.com/javalobby/frontpage"
-            }
-        ],
-        "num-shares": 45,
-        "topics": [
-            {
-                "type": "topic",
-                "key": "NoSQL",
-                "title": "NoSQL"
-            },
-            {
-                "type": "topic",
-                "key": "Graph Theory",
-                "title": "Graph Theory"
-            }
-        ]
-    },
-    {
-        "text": "I have been lately reading The Art of War by Sun Tzu during my buss ride to work. One Chapter of the book described the five faults, which may effect to a general. I realized instantly that the text could also be applied to software engineers. Without further introduction, I will give you the five faults of a software engineer:There are five dangerous faults, which may effect to a software engineer:Recklessness, which leads to destruction. If a software engineer is reckless, his quality of work will be considerable lower than the quality of work done by software engineers, who think before they act. Reckless people tend to make a lot of mistakes and some of them might be very expensive to fix. Even though a reckless software engineer would not make expensive mistakes, he will nevertheless spent his time to fix mistakes, which could have been easily avoided. Remember that it is almost always wise to think before you act.Cowardice, which leads to capture. If a software engineer is desperate...",
-        "date": 1383258227076,
-        "prismatic-activity": {
-            "save": 4,
-            "remove": 2,
-            "share": 5,
-            "bookmark": 5,
-            "click": 60
-        },
-        "first-degree-connections": {
-            "prismatic-actions": [],
-            "external-actions": [],
-            "interests": [
-                {
-                    "type": "topic",
-                    "key": "Software Engineering",
-                    "title": "Software Engineering"
-                },
-                {
-                    "type": "topic",
-                    "key": "Engineering",
-                    "title": "Engineering"
-                }
-            ]
-        },
-        "images": [],
-        "author": {
-            "url": "http://www.petrikainulainen.net/books/spring-data/?utm_source=PetriKainulainenNet&utm_medium=AboutAuthorBox&utm_campaign=SpringDataBook",
-            "name": "Spring Data"
-        },
-        "commerce": null,
-        "title": "The Five Faults of a Software Engineer",
-        "url": "http://www.petrikainulainen.net/software-development/general/the-five-faults-of-a-software-engineer/",
-        "feed": {
-            "type": "feed",
-            "key": "http://www.petrikainulainen.net/feed/",
-            "title": "Petri Kainulainen",
-            "img": "http://imagecdn.getprismatic.com/pub/16/8390064315799171503.ico"
+            "key": "http://www.heimeshoff.de/wordpress/?feed=rss2",
+            "title": "Marco Heimeshoff",
+            "img": "http://imagecdn.getprismatic.com/pub/16/-5361030014415514142.ico"
         },
         "prismatic-shares": [
             [
@@ -589,33 +249,18 @@
                     "type": "activity"
                 },
                 {
-                    "actions": ["share", "bookmark"],
-                    "score": 2.6E-9,
+                    "actions": ["share"],
+                    "score": 1.6000000000000003E-9,
                     "following?": false
                 }
             ],
             [
                 {
-                    "display-key": "cciotti",
-                    "key": 202975,
-                    "name": "chris ciotti",
-                    "title": "cciotti",
-                    "img": "http://pbs.twimg.com/profile_images/1263260762/Me-in-LS_bigger.jpg",
-                    "type": "activity"
-                },
-                {
-                    "actions": ["bookmark", "share"],
-                    "score": 2.6E-9,
-                    "following?": false
-                }
-            ],
-            [
-                {
-                    "display-key": "purbon",
-                    "key": 126241,
-                    "name": "Pere Urbon",
-                    "title": "purbon",
-                    "img": "http://graph.facebook.com/pere.urbon/picture?type=large",
+                    "display-key": "state",
+                    "key": 82614,
+                    "name": "Christopher State",
+                    "title": "state",
+                    "img": "http://s3.amazonaws.com/prismatic-profiles/primary-image-938811011.jpeg",
                     "type": "activity"
                 },
                 {
@@ -626,11 +271,11 @@
             ],
             [
                 {
-                    "display-key": "alex_mikhalev",
-                    "key": 18530,
-                    "name": "Alexander Mikhalev",
-                    "title": "alex_mikhalev",
-                    "img": "http://a0.twimg.com/sticky/default_profile_images/default_profile_3_bigger.png",
+                    "display-key": "jxstanford",
+                    "key": 4891,
+                    "name": "John Stanford",
+                    "title": "jxstanford",
+                    "img": "http://a0.twimg.com/profile_images/2535379599/kd5ske41eohhgwpdkg5p_bigger.jpeg",
                     "type": "activity"
                 },
                 {
@@ -641,108 +286,270 @@
             ],
             [
                 {
-                    "display-key": "rhoml",
-                    "key": 11292,
-                    "name": "Rhommel",
-                    "title": "rhoml",
-                    "img": "http://a0.twimg.com/profile_images/3307090807/519f91281d1cc98f606321abb6702d7c_bigger.png",
+                    "display-key": "stingh711",
+                    "key": 35176,
+                    "name": "stingh711",
+                    "title": "stingh711",
+                    "img": "http://a0.twimg.com/profile_images/36331732/tw_bigger.jpg",
                     "type": "activity"
                 },
                 {
-                    "actions": ["share"],
-                    "score": 1.6000000000000003E-9,
+                    "actions": ["bookmark", "save"],
+                    "score": 1.35E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "quant_leap",
+                    "key": 8271,
+                    "name": "Fernando Racca",
+                    "title": "quant_leap",
+                    "img": "http://a0.twimg.com/profile_images/2119992249/fernando_scala3_bigger.png",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["click", "bookmark"],
+                    "score": 1.2E-9,
                     "following?": false
                 }
             ]
         ],
         "comments": [],
         "user-share-ids": {},
-        "id": 1383258222786,
+        "id": 1383608430170,
         "home-interests": [
             {
                 "type": "topic",
-                "key": "Software development process"
+                "key": "Programming"
+            },
+            {
+                "type": "raw",
+                "key": "code kata"
             },
             {
                 "type": "topic",
                 "key": "Software Engineering"
-            },
-            {
-                "type": "topic",
-                "key": "Engineering"
             }
         ],
-        "num-shares": 86,
+        "num-shares": 235,
         "topics": [
+            {
+                "type": "topic",
+                "key": "Programming",
+                "title": "Programming"
+            },
             {
                 "type": "topic",
                 "key": "Software Engineering",
                 "title": "Software Engineering"
-            },
-            {
-                "type": "topic",
-                "key": "Engineering",
-                "title": "Engineering"
             }
         ]
     },
     {
-        "text": "Raft is a new-ish consensus implementation whose great benefit, to my mind it, is its applicability for real systems. We briefly discussed it internally at Cloudera, and I thought I\u2019d share what I contributed, below. There\u2019s an underlying theme here regarding the role of distributed systems research in practitioners\u2019 daily work, and how the act of building a distributed system has not yet been sufficiently well commoditised to render a familiarity with the original research unnecessary. I think I\u2019d argue that bridging that gap further is necessary: no matter how much fun it is to read all these papers, it shouldn\u2019t be a pre-requisite to being successful in implementing a distributed system. I have more to write on this. \u201CThe trouble with Paxos is that it\u2019s \u2018only\u2019 a consensus algorithm; a theoretical achievement but not one necessarily suited to building practical systems. Remember that the demonstration that a correct, message-optimal protocol even existed was the main contribution. To...",
-        "date": 1383247530439,
+        "text": "One of the great things about Hadoop is that it's open source, which allows developers of all stripes to lash their code to the beast and give it a whirl. One of the big data software startups riding Hadoop is the San Francisco company Splice Machine, which claims to have built the industry's first real-time, transactional, SQL-on-Hadoop database.\n\nHadoop rose to prominence several years ago for its capability to run massively parallel analytic workloads in a batch environment. Today we're seeing Hadoop evolve in other directions, especially with the advent of the HBase NoSQL database that can ride atop Hadoop and provide real-time transactional capabilities. SQL is also getting bigger on Hadoop through Hive and other open source and commercial projects.\n\nBut according to the folks at Splice Machine, what the market really needs is a way to bring all these capabilities together in seamless manner. If Hadoop is going to be the center of the big data universe--and it certainly seems to be...",
+        "date": 1383588541188,
         "prismatic-activity": {
-            "save": 1,
-            "remove": 1,
-            "share": 1,
-            "email": 1,
+            "save": 5,
+            "email": 4,
             "bookmark": 4,
-            "click": 13
+            "click": 27
         },
         "first-degree-connections": {
             "prismatic-actions": [],
-            "external-actions": [
-                {
-                    "type": "twitter",
-                    "id": "395992930621472768",
-                    "user": {
-                        "url": "https://twitter.com/mentalguy",
-                        "name": "mentalguy",
-                        "title": "mentalguy",
-                        "key": 14358152,
-                        "type": "twitter",
-                        "img": "http://pbs.twimg.com/profile_images/54896192/avatar-100x100_normal.png"
-                    },
-                    "date": 1383247046000
-                }
-            ],
+            "external-actions": [],
             "interests": [
                 {
                     "type": "topic",
-                    "key": "Distributed Computing",
-                    "title": "Distributed Computing"
+                    "key": "NoSQL",
+                    "title": "NoSQL"
+                },
+                {
+                    "type": "topic",
+                    "key": "Database",
+                    "title": "Database"
                 }
             ]
         },
         "images": [],
         "author": null,
         "commerce": null,
-        "title": "On Raft, briefly",
-        "url": "http://the-paper-trail.org/blog/on-raft-briefly/",
+        "title": "Making Hadoop Into a Real-Time SQL Database",
+        "url": "http://www.datanami.com/datanami/2013-11-04/making_hadoop_into_a_real-time_sql_database.html",
         "feed": {
-            "displayType": "publisher",
-            "key": "http://the-paper-trail.org/blog/feed/",
-            "img": "http://imagecdn.getprismatic.com/pub/16/7856244184149872625.ico",
             "type": "feed",
-            "title": "Paper Trail",
-            "since": 1359608861717
+            "key": "www.datanami.com",
+            "title": "Datanami",
+            "img": "http://imagecdn.getprismatic.com/pub/16/1504672193910455792.ico",
+            "highres-img": "http://imagecdn.getprismatic.com/pub/big/1504672193910455792.png"
         },
         "prismatic-shares": [
             [
                 {
-                    "display-key": "alex_mikhalev",
-                    "key": 18530,
-                    "name": "Alexander Mikhalev",
-                    "title": "alex_mikhalev",
-                    "img": "http://a0.twimg.com/sticky/default_profile_images/default_profile_3_bigger.png",
+                    "display-key": "max85",
+                    "key": 199753,
+                    "name": "Thomas Gremm",
+                    "title": "max85",
+                    "img": "http://a0.twimg.com/profile_images/2189519167/tumblr_m31fgqNxQt1qzcapfo1_500_bigger.jpg",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["bookmark"],
+                    "score": 1.0E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "caidong",
+                    "key": 115379,
+                    "name": "Charles Cai",
+                    "title": "caidong",
+                    "img": "http://a0.twimg.com/profile_images/58917305/nini1_bigger.jpg",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["bookmark"],
+                    "score": 1.0E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "amittripathy",
+                    "key": 77783,
+                    "name": "Amit Tripathy",
+                    "title": "amittripathy",
+                    "img": "http://graph.facebook.com/amit.tripathy.940/picture?type=large",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["bookmark"],
+                    "score": 1.0E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "gustin",
+                    "key": 4862,
+                    "name": "Gustin Prudner",
+                    "title": "gustin",
+                    "img": "http://a0.twimg.com/profile_images/2623045577/dtaqgp4wa2ufajkpdt69_bigger.jpeg",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["bookmark"],
+                    "score": 1.0E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "jayshen",
+                    "key": 109245,
+                    "name": "Jay Shen",
+                    "title": "jayshen",
+                    "img": "http://graph.facebook.com/jay8shen/picture?type=large",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["click"],
+                    "score": 2.0000000000000003E-10,
+                    "following?": false
+                }
+            ]
+        ],
+        "comments": [],
+        "user-share-ids": {},
+        "id": 1383588539923,
+        "home-interests": [
+            {
+                "type": "topic",
+                "key": "Database"
+            },
+            {
+                "type": "topic",
+                "key": "NoSQL"
+            }
+        ],
+        "num-shares": 56,
+        "topics": [
+            {
+                "type": "topic",
+                "key": "NoSQL",
+                "title": "NoSQL"
+            },
+            {
+                "type": "topic",
+                "key": "Database",
+                "title": "Database"
+            }
+        ]
+    },
+    {
+        "related": {
+            "type": "related",
+            "key": 1383603799918
+        },
+        "text": "The above map of New York City, created by Clement Valla, is admittedly unintelligible. Views of the city from all angles implode on top of each other. Upon close inspection, random glimpses of yellow taxis appear to navigate streetscapes as Picasso might have envisioned them. Scan the entire scene, and it mostly looks like a video game gone horribly awry. The essential data, though is intact. This is a 3D satellite view of New York City, expressed in two dimensions, from Valla's wonderfully disorienting web project \"3D maps minus the 3D.\" You're looking at visual data meant to be processed by computers in re-assembling three-dimensional aerial views from satellite data for online platforms you might more readily recognize, like Google Satellite. The result, not necessarily intended for human consumption, is part kaleidoscope, part cubist art, part commentary on the omnipotent aerial view of cities. Satellite images, writes Valla, an associate professor of Graphic Design at RISD, represent...",
+        "date": 1383603801736,
+        "prismatic-activity": {
+            "save": 3,
+            "remove": 5,
+            "share": 3,
+            "bookmark": 1,
+            "click": 59
+        },
+        "first-degree-connections": {
+            "prismatic-actions": [],
+            "external-actions": [],
+            "interests": []
+        },
+        "images": [
+            {
+                "in-div": false,
+                "orig-size": {
+                    "width": "608"
+                },
+                "size": {
+                    "width": 608,
+                    "height": 438
+                },
+                "url": "http://cdn.theatlanticcities.com/img/upload/2013/11/04/Screen_Shot_2013-11-04_at_4.15.53_PM/largest.png"
+            },
+            {
+                "prob": 0.22130844579707623,
+                "orig-size": {},
+                "size": {
+                    "width": 608,
+                    "height": 416
+                },
+                "url": "http://cdn.theatlanticcities.com/img/upload/2013/11/04/miami.png",
+                "in-div": true
+            }
+        ],
+        "author": {
+            "url": "http://www.theatlanticcities.com/authors/emily-badger/",
+            "name": "Emily Badger"
+        },
+        "commerce": null,
+        "title": "Maps Never Meant for Human Eyes",
+        "url": "http://www.theatlanticcities.com/technology/2013/11/maps-never-meant-human-eyes/7467/",
+        "feed": {
+            "type": "feed",
+            "key": "http://feeds.feedburner.com/TheAtlanticCities",
+            "title": "The Atlantic Cities",
+            "img": "http://imagecdn.getprismatic.com/pub/16/2807383014643348820.ico"
+        },
+        "prismatic-shares": [
+            [
+                {
+                    "display-key": "zedi",
+                    "key": 111776,
+                    "name": "Roger Zedi",
+                    "title": "zedi",
+                    "img": "http://graph.facebook.com/roger.zedi/picture?type=large",
                     "type": "activity"
                 },
                 {
@@ -753,11 +560,41 @@
             ],
             [
                 {
-                    "display-key": "karanjude",
-                    "key": 10209,
-                    "name": "karanjude",
-                    "title": "karanjude",
-                    "img": "http://a0.twimg.com/sticky/default_profile_images/default_profile_5_bigger.png",
+                    "display-key": "ibstatguy",
+                    "key": 64343,
+                    "name": "Tony Mahavier",
+                    "title": "ibstatguy",
+                    "img": "http://a0.twimg.com/profile_images/3461262031/08683f1d0f1db05e103eedac1c4408b8_bigger.png",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["share"],
+                    "score": 1.6000000000000003E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "simon_kong",
+                    "key": 8347,
+                    "name": "Smn Kng",
+                    "title": "simon_kong",
+                    "img": "http://a0.twimg.com/profile_images/3238198244/10975993bce0e706759793cd5e8ff5db_bigger.jpeg",
+                    "type": "activity"
+                },
+                {
+                    "actions": ["share"],
+                    "score": 1.6000000000000003E-9,
+                    "following?": false
+                }
+            ],
+            [
+                {
+                    "display-key": "lgol27",
+                    "key": 47142,
+                    "name": "Leonid Golender",
+                    "title": "lgol27",
+                    "img": "http://graph.facebook.com/leonid.golender/picture?type=large",
                     "type": "activity"
                 },
                 {
@@ -768,41 +605,94 @@
             ],
             [
                 {
-                    "display-key": "rollyfordham",
-                    "key": 1834,
-                    "name": "Rolly Fordham",
-                    "title": "rollyfordham",
-                    "img": "http://a0.twimg.com/profile_images/1410977988/IMG_3502_cropped_smaller_bigger.jpg",
+                    "display-key": "pixelbeat",
+                    "key": 22491,
+                    "name": "Davo Galavotti",
+                    "title": "pixelbeat",
+                    "img": "http://s3.amazonaws.com/prismatic-profiles/primary-image-248345891.jpg",
                     "type": "activity"
                 },
                 {
-                    "actions": ["bookmark"],
-                    "score": 1.0E-9,
+                    "actions": ["save"],
+                    "score": 3.5E-10,
                     "following?": false
                 }
-            ],
-            [
+            ]
+        ],
+        "comments": [],
+        "user-share-ids": {},
+        "id": 1383603799918,
+        "home-interests": [
+            {
+                "type": "topic",
+                "key": "Mind map"
+            }
+        ],
+        "num-shares": 92,
+        "topics": [
+            {
+                "type": "topic",
+                "key": "Maps",
+                "title": "Maps"
+            }
+        ]
+    },
+    {
+        "text": "Since our Prelert Anomaly Detective for Splunk application leverages aspects of predictive analytics for the purposes of anomaly detection, I often get questions related to the differences between Prelert\u2019s technology and Splunk\u2019s. This is particularly the case concerning Splunk\u2019s \u2018predict\u2019 command. Let\u2019s start first with an overview of the Splunk \u2018predict\u2019 command.\n\nThe \u2018predict\u2019 command in Splunk assists users in visualizing a 95th percentile \u201Cband of normalcy\u201D around a value of a data series over time. In addition to this visualization, one can also follow the instructions outlined in this Splunk blog article to potentially drive alerts when the actual value of the data series falls outside of the \u201Cband of normalcy\u201D. This is like setting thresholds in advance for alerts.\n\nI applied the blog\u2019s recommended usage of \u2018predict\u2019 against some representative response time data (available here) to test the results: sourcetype=\u201Dfarequote\u201D airline=AAL | timechart span=1m max(responsetime) as resptime...",
+        "date": 1383647686193,
+        "prismatic-activity": {
+            "save": 1,
+            "remove": 1,
+            "bookmark": 1,
+            "click": 3
+        },
+        "first-degree-connections": {
+            "prismatic-actions": [],
+            "external-actions": [],
+            "interests": [
                 {
-                    "display-key": "sbanwart",
-                    "key": 134707,
-                    "name": "Scott Banwart",
-                    "title": "sbanwart",
-                    "img": "http://s3.amazonaws.com/prismatic-profiles/primary-image-173108410.png",
-                    "type": "activity"
+                    "type": "topic",
+                    "key": "Data Mining",
+                    "title": "Data Mining"
+                }
+            ]
+        },
+        "images": [
+            {
+                "in-div": false,
+                "prob": 0.9180430367921972,
+                "orig-size": {
+                    "height": "16",
+                    "width": "171"
                 },
-                {
-                    "actions": ["bookmark"],
-                    "score": 1.0E-9,
-                    "following?": false
-                }
-            ],
+                "size": {
+                    "width": 171,
+                    "height": 16
+                },
+                "url": "http://www.prelert.com/blog/wp-content/plugins/add-to-any/share_save_171_16.png"
+            }
+        ],
+        "author": {
+            "url": "http://www.prelert.com/blog/author/rich/",
+            "name": "Rich Collier"
+        },
+        "commerce": null,
+        "title": "Splunk and Prelert Predict: What's the Difference?",
+        "url": "http://www.prelert.com/blog/prelert-vs-splunks-predict-command-whats-the-difference/",
+        "feed": {
+            "type": "feed",
+            "key": "http://www.prelert.com/blog/feed/",
+            "title": "Machine Intelligence",
+            "img": "http://imagecdn.getprismatic.com/pub/16/-5576580612907327804.ico"
+        },
+        "prismatic-shares": [
             [
                 {
-                    "display-key": "aemadrid",
-                    "key": 16217,
-                    "name": "aemadrid",
-                    "title": "aemadrid",
-                    "img": "http://a0.twimg.com/profile_images/1370236561/shot_1294018556793_bigger.jpg",
+                    "display-key": "max85",
+                    "key": 199753,
+                    "name": "Thomas Gremm",
+                    "title": "max85",
+                    "img": "http://a0.twimg.com/profile_images/2189519167/tumblr_m31fgqNxQt1qzcapfo1_500_bigger.jpg",
                     "type": "activity"
                 },
                 {
@@ -814,28 +704,19 @@
         ],
         "comments": [],
         "user-share-ids": {},
-        "id": 1383247509555,
+        "id": 1383647682365,
         "home-interests": [
             {
-                "type": "prismatic-social",
-                "key": "-default-"
-            },
-            {
                 "type": "topic",
-                "key": "Distributed Computing"
+                "key": "Data Mining"
             }
         ],
-        "num-shares": 55,
+        "num-shares": 11,
         "topics": [
             {
                 "type": "topic",
-                "key": "Distributed Computing",
-                "title": "Distributed Computing"
-            },
-            {
-                "type": "topic",
-                "key": "Operations Research",
-                "title": "Operations Research"
+                "key": "Data Mining",
+                "title": "Data Mining"
             }
         ]
     }

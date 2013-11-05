@@ -8,6 +8,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.net.URL;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * @author Vitaliy Gerya
@@ -20,11 +22,20 @@ public class Feed extends TitledItem {
     @XmlElement(name = "highres-img")
     private URL highResImage;
     private String displayType;
+    private List<String> explain = new LinkedList<>();
     // TODO replace long with Date
     private long since;
     private long priority;
 
     public Feed() {
+    }
+
+    public List<String> getExplain() {
+        return explain;
+    }
+
+    public void setExplain(final List<String> explain) {
+        this.explain = explain;
     }
 
     public long getPriority() {
@@ -83,6 +94,7 @@ public class Feed extends TitledItem {
                 .append("image", image)
                 .append("highResImage", highResImage)
                 .append("displayType", displayType)
+                .append("explain", explain)
                 .append("since", since)
                 .append("priority", priority)
                 .toString();

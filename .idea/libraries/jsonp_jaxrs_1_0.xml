@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="jsonp-jaxrs-1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/jsonp-jaxrs/1.0/e3ac0e8e9b615f4d232dbe767c9c11f62ccf3cb8/jsonp-jaxrs-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/jsonp-jaxrs/1.0/1765abf2aa802a6b27b0f7dfd816a5a510daab05/jsonp-jaxrs-1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.glassfish/jsonp-jaxrs/1.0/4ae2b69f09a90bda83f2d56de48b1f2d1d1fb762/jsonp-jaxrs-1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -14,10 +14,10 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.net.URL;
 
+import static edu.mype.prismandr.client.PrismaticService.convertToJson;
 import static org.fest.assertions.api.Assertions.assertThat;
 
 
@@ -29,17 +29,6 @@ public class PrismaticServiceShould {
 
     private static String trimSpacesAndQuotes(final String input) {
         return new String(input).replace("\"", "").replace(" ", "");
-    }
-
-    private static String convertToJson(Object value) throws IOException {
-        JacksonJaxbJsonProvider provider = new JacksonJaxbJsonProvider();
-        provider.configure(JsonGenerator.Feature.QUOTE_NON_NUMERIC_NUMBERS, false);
-        provider.configure(JsonGenerator.Feature.QUOTE_FIELD_NAMES, true);
-        try (ByteArrayOutputStream baos = new ByteArrayOutputStream();) {
-            provider.writeTo(value, value
-                    .getClass(), null, null, MediaType.APPLICATION_JSON_TYPE, null, baos);
-            return new String(baos.toByteArray());
-        }
     }
 
     private <T> T parseFromJson(String json, Class<T> claz) throws IOException {

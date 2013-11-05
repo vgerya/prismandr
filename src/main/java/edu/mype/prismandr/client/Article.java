@@ -29,7 +29,7 @@ public class Article {
     private Connection firstDegreeConnections;
     private List<Image> images = new LinkedList<>();
     private Author author;
-    private String commerce;
+    private Commerce commerce;
     private String title;
     private URL url;
     private Feed feed;
@@ -47,7 +47,7 @@ public class Article {
     public Article() {
     }
 
-    public Article(long id, String text, long date, Item related, Activity activity, Connection firstDegreeConnections, List<Image> images, Author author, String commerce, String title, URL url, Feed feed, List<List<Object>> prismaticShares, List<Comment> comments, Share userShareIds, List<Item> homeInterests, long numShares, List<TitledItem> topics) {
+    public Article(final long id, final String text, final long date, final Item related, final Activity activity, final Connection firstDegreeConnections, final List<Image> images, final Author author, final Commerce commerce, final String title, final URL url, final Feed feed, final List<List<Object>> prismaticShares, final List<Comment> comments, final Share userShareIds, final List<Item> homeInterests, final long numShares, final List<TitledItem> topics) {
         this.id = id;
         this.text = text;
         this.date = date;
@@ -66,6 +66,14 @@ public class Article {
         this.homeInterests = homeInterests;
         this.numShares = numShares;
         this.topics = topics;
+    }
+
+    public Commerce getCommerce() {
+        return commerce;
+    }
+
+    public void setCommerce(final Commerce commerce) {
+        this.commerce = commerce;
     }
 
     public Item getRelated() {
@@ -130,14 +138,6 @@ public class Article {
 
     public void setAuthor(Author author) {
         this.author = author;
-    }
-
-    public String getCommerce() {
-        return commerce;
-    }
-
-    public void setCommerce(String commerce) {
-        this.commerce = commerce;
     }
 
     public String getTitle() {
@@ -245,7 +245,7 @@ public class Article {
         private Connection firstDegreeConnections;
         private List<Image> images;
         private Author author;
-        private String commerce;
+        private Commerce commerce;
         private String title;
         private URL url;
         private Feed feed;
@@ -296,7 +296,7 @@ public class Article {
             return this;
         }
 
-        public ArticleBuilder setCommerce(String commerce) {
+        public ArticleBuilder setCommerce(Commerce commerce) {
             this.commerce = commerce;
             return this;
         }
@@ -321,7 +321,7 @@ public class Article {
             return this;
         }
 
-        public ArticleBuilder addPrismaticShares(Share ... share) {
+        public ArticleBuilder addPrismaticShares(Share... share) {
             this.prismaticShares.get(0).addAll(Arrays.asList(share));
             return this;
         }
