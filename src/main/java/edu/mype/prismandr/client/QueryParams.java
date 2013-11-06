@@ -29,7 +29,7 @@ public class QueryParams {
         return subpage;
     }
 
-    public void setSubpage(boolean subpage) {
+    public void setSubpage(final boolean subpage) {
         this.subpage = subpage;
     }
 
@@ -37,7 +37,7 @@ public class QueryParams {
         return lastFeedID;
     }
 
-    public void setLastFeedID(String lastFeedID) {
+    public void setLastFeedID(final String lastFeedID) {
         this.lastFeedID = lastFeedID;
     }
 
@@ -45,7 +45,7 @@ public class QueryParams {
         return firstArticleIdx;
     }
 
-    public void setFirstArticleIdx(long firstArticleIdx) {
+    public void setFirstArticleIdx(final long firstArticleIdx) {
         this.firstArticleIdx = firstArticleIdx;
     }
 
@@ -53,7 +53,7 @@ public class QueryParams {
         return lastArticleIdx;
     }
 
-    public void setLastArticleIdx(long lastArticleIdx) {
+    public void setLastArticleIdx(final long lastArticleIdx) {
         this.lastArticleIdx = lastArticleIdx;
     }
 

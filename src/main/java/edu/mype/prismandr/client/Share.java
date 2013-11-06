@@ -18,7 +18,7 @@ public class Share {
     public Share() {
     }
 
-    public Share(ShareUser user, UserShareAction userShareAction) {
+    public Share(final ShareUser user, final UserShareAction userShareAction) {
         this.user = user;
         this.userShareAction = userShareAction;
     }
@@ -27,7 +27,7 @@ public class Share {
         return user;
     }
 
-    public void setUser(ShareUser user) {
+    public void setUser(final ShareUser user) {
         this.user = user;
     }
 
@@ -35,7 +35,7 @@ public class Share {
         return userShareAction;
     }
 
-    public void setUserShareAction(UserShareAction userShareAction) {
+    public void setUserShareAction(final UserShareAction userShareAction) {
         this.userShareAction = userShareAction;
     }
 
@@ -51,12 +51,12 @@ public class Share {
         private ShareUser user;
         private UserShareAction userShareAction;
 
-        public ShareBuilder setUser(ShareUser user) {
+        public ShareBuilder setUser(final ShareUser user) {
             this.user = user;
             return this;
         }
 
-        public ShareBuilder setUserShareAction(UserShareAction userShareAction) {
+        public ShareBuilder setUserShareAction(final UserShareAction userShareAction) {
             this.userShareAction = userShareAction;
             return this;
         }

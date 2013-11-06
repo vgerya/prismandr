@@ -52,7 +52,7 @@ public class PrismaticService {
         return Session.parseFromHeaders(response.getHeaders().get("Set-Cookie"));
     }
 
-    private void checkResponseStatus(Response response) {
+    private void checkResponseStatus(final Response response) {
         final int statusCode = response.getStatus();
         if (statusCode == Response.Status.OK.getStatusCode())
             return;
@@ -60,7 +60,7 @@ public class PrismaticService {
             throw new PrismaticAuthenticationException(response);
     }
 
-    public Post fetch(Session session, NextRequest next) {
+    public Post fetch(final Session session, final NextRequest next) {
         LOGGER.debug(((next == null) ? "Initial request" : "next request: " + next) + "/n Session: " + session
                 .toString());
         WebTarget target = createInitialFetchTarget();
@@ -90,7 +90,7 @@ public class PrismaticService {
         return post;
     }
 
-    public static String convertToJson(Object value) throws IOException {
+    public static String convertToJson(final Object value) throws IOException {
         JacksonJaxbJsonProvider provider = new JacksonJaxbJsonProvider();
         provider.configure(JsonGenerator.Feature.QUOTE_NON_NUMERIC_NUMBERS, false);
         provider.configure(JsonGenerator.Feature.QUOTE_FIELD_NAMES, true);
@@ -101,19 +101,19 @@ public class PrismaticService {
         }
     }
 
-    private Invocation.Builder appendCookies(Session session, Invocation.Builder request) {
+    private Invocation.Builder appendCookies(final Session session, final Invocation.Builder request) {
+        Invocation.Builder requestAppended = request;
         for (Cookie cookie : session.getCookies()) {
-            request = request.cookie(cookie);
+            requestAppended = requestAppended.cookie(cookie);
         }
-        return request;
+        return requestAppended;
     }
 
-    private WebTarget fillNextParameters(NextRequest next, WebTarget target) {
-        target = target.queryParam("first-article-idx", next.getQueryParams().getFirstArticleIdx())
+    private WebTarget fillNextParameters(final NextRequest next, final WebTarget target) {
+        return target.queryParam("first-article-idx", next.getQueryParams().getFirstArticleIdx())
                        .queryParam("last-article-idx", next.getQueryParams().getLastArticleIdx())
                        .queryParam("last-feed-id", next.getQueryParams().getLastFeedID())
                        .queryParam("subpage", next.getQueryParams().isSubpage());
-        return target;
     }
 
     private WebTarget createInitialFetchTarget() {
@@ -122,7 +122,7 @@ public class PrismaticService {
                      .queryParam("api-version", "1.2");
     }
 
-    public Post fetch(Session session) {
+    public Post fetch(final Session session) {
         return fetch(session, null);
     }
 

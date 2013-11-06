@@ -18,7 +18,7 @@ public class ConnectionInterest extends TitledItem {
     @XmlElement(name = "img")
     // TODO testing of URL instead of String
     private URL image;
-    @XmlElement(name="highres-img")
+    @XmlElement(name = "highres-img")
     private URL highResImage;
     private long since;
 
@@ -29,7 +29,7 @@ public class ConnectionInterest extends TitledItem {
         return highResImage;
     }
 
-    public void setHighResImage(URL highResImage) {
+    public void setHighResImage(final URL highResImage) {
         this.highResImage = highResImage;
     }
 
@@ -37,7 +37,7 @@ public class ConnectionInterest extends TitledItem {
         return since;
     }
 
-    public void setSince(long since) {
+    public void setSince(final long since) {
         this.since = since;
     }
 
@@ -45,7 +45,7 @@ public class ConnectionInterest extends TitledItem {
         return image;
     }
 
-    public void setImage(URL image) {
+    public void setImage(final URL image) {
         this.image = image;
     }
 

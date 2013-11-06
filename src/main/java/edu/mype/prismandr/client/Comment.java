@@ -37,7 +37,7 @@ public class Comment {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(final long id) {
         this.id = id;
     }
 
@@ -45,7 +45,7 @@ public class Comment {
         return text;
     }
 
-    public void setText(String text) {
+    public void setText(final String text) {
         this.text = text;
     }
 
@@ -53,7 +53,7 @@ public class Comment {
         return date;
     }
 
-    public void setDate(long date) {
+    public void setDate(final long date) {
         this.date = date;
     }
 
@@ -61,7 +61,7 @@ public class Comment {
         return textEntety;
     }
 
-    public void setTextEntety(TextEntity textEntety) {
+    public void setTextEntety(final TextEntity textEntety) {
         this.textEntety = textEntety;
     }
 
@@ -69,7 +69,7 @@ public class Comment {
         return actionCount;
     }
 
-    public void setActionCount(ActionCount actionCount) {
+    public void setActionCount(final ActionCount actionCount) {
         this.actionCount = actionCount;
     }
 
@@ -77,7 +77,7 @@ public class Comment {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(final String type) {
         this.type = type;
     }
 
@@ -85,7 +85,7 @@ public class Comment {
         return parentCommentId;
     }
 
-    public void setParentCommentId(long parentCommentId) {
+    public void setParentCommentId(final long parentCommentId) {
         this.parentCommentId = parentCommentId;
     }
 
@@ -93,7 +93,7 @@ public class Comment {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(final User user) {
         this.user = user;
     }
 
@@ -101,7 +101,7 @@ public class Comment {
         return userShareIds;
     }
 
-    public void setUserShareIds(Share userShareIds) {
+    public void setUserShareIds(final Share userShareIds) {
         this.userShareIds = userShareIds;
     }
 
@@ -109,7 +109,7 @@ public class Comment {
         return action;
     }
 
-    public void setAction(CommentAction action) {
+    public void setAction(final CommentAction action) {
         this.action = action;
     }
 

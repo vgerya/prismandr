@@ -16,7 +16,7 @@ public class UserCredential {
     private String handle;
     private String password;
 
-    public UserCredential(String handle, String password) {
+    public UserCredential(final String handle, final String password) {
         this.handle = handle;
         this.password = password;
     }
@@ -31,26 +31,6 @@ public class UserCredential {
 
     public String getPassword() {
         return password;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        UserCredential that = (UserCredential) o;
-
-        if (!handle.equals(that.handle)) return false;
-        if (!password.equals(that.password)) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = handle.hashCode();
-        result = 31 * result + password.hashCode();
-        return result;
     }
 
     @Override

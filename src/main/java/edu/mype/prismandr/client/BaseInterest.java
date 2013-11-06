@@ -24,7 +24,7 @@ public class BaseInterest {
         return url;
     }
 
-    public void setUrl(String url) {
+    public void setUrl(final String url) {
         this.url = url;
     }
 
@@ -32,7 +32,7 @@ public class BaseInterest {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(final String title) {
         this.title = title;
     }
 
@@ -40,7 +40,7 @@ public class BaseInterest {
         return count;
     }
 
-    public void setCount(long count) {
+    public void setCount(final long count) {
         this.count = count;
     }
 

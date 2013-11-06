@@ -19,7 +19,12 @@ public class Item {
     public Item() {
     }
 
-    public Item(String key, String type) {
+    public Item(final Item item) {
+        this.key = item.key;
+        this.type = item.type;
+    }
+
+    public Item(final String key, final String type) {
         this.key = key;
         this.type = type;
     }
@@ -28,7 +33,7 @@ public class Item {
         return key;
     }
 
-    public void setKey(String key) {
+    public void setKey(final String key) {
         this.key = key;
     }
 
@@ -36,15 +41,13 @@ public class Item {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(final String type) {
         this.type = type;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-                .append("key", key)
-                .append("type", type)
-                .toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("key", key).append("type", type)
+                                                                          .toString();
     }
 }

@@ -47,7 +47,11 @@ public class Article {
     public Article() {
     }
 
-    public Article(final long id, final String text, final long date, final Item related, final Activity activity, final Connection firstDegreeConnections, final List<Image> images, final Author author, final Commerce commerce, final String title, final URL url, final Feed feed, final List<List<Object>> prismaticShares, final List<Comment> comments, final Share userShareIds, final List<Item> homeInterests, final long numShares, final List<TitledItem> topics) {
+    public Article(final long id, final String text, final long date, final Item related, final Activity activity,
+                   final Connection firstDegreeConnections, final List<Image> images, final Author author,
+                   final Commerce commerce, final String title, final URL url, final Feed feed,
+                   final List<List<Object>> prismaticShares, final List<Comment> comments, final Share userShareIds,
+                   final List<Item> homeInterests, final long numShares, final List<TitledItem> topics) {
         this.id = id;
         this.text = text;
         this.date = date;
@@ -80,7 +84,7 @@ public class Article {
         return related;
     }
 
-    public void setRelated(Item related) {
+    public void setRelated(final Item related) {
         this.related = related;
     }
 
@@ -88,7 +92,7 @@ public class Article {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(final long id) {
         this.id = id;
     }
 
@@ -96,7 +100,7 @@ public class Article {
         return text;
     }
 
-    public void setText(String text) {
+    public void setText(final String text) {
         this.text = text;
     }
 
@@ -104,7 +108,7 @@ public class Article {
         return date;
     }
 
-    public void setDate(long date) {
+    public void setDate(final long date) {
         this.date = date;
     }
 
@@ -112,7 +116,7 @@ public class Article {
         return activity;
     }
 
-    public void setActivity(Activity activity) {
+    public void setActivity(final Activity activity) {
         this.activity = activity;
     }
 
@@ -120,7 +124,7 @@ public class Article {
         return firstDegreeConnections;
     }
 
-    public void setFirstDegreeConnections(Connection firstDegreeConnections) {
+    public void setFirstDegreeConnections(final Connection firstDegreeConnections) {
         this.firstDegreeConnections = firstDegreeConnections;
     }
 
@@ -128,7 +132,7 @@ public class Article {
         return images;
     }
 
-    public void setImages(List<Image> images) {
+    public void setImages(final List<Image> images) {
         this.images = images;
     }
 
@@ -136,7 +140,7 @@ public class Article {
         return author;
     }
 
-    public void setAuthor(Author author) {
+    public void setAuthor(final Author author) {
         this.author = author;
     }
 
@@ -144,7 +148,7 @@ public class Article {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(final String title) {
         this.title = title;
     }
 
@@ -152,7 +156,7 @@ public class Article {
         return url;
     }
 
-    public void setUrl(URL url) {
+    public void setUrl(final URL url) {
         this.url = url;
     }
 
@@ -160,7 +164,7 @@ public class Article {
         return feed;
     }
 
-    public void setFeed(Feed feed) {
+    public void setFeed(final Feed feed) {
         this.feed = feed;
     }
 
@@ -168,7 +172,7 @@ public class Article {
         return prismaticShares;
     }
 
-    public void setPrismaticShares(List<List<Object>> prismaticShares) {
+    public void setPrismaticShares(final List<List<Object>> prismaticShares) {
         this.prismaticShares = prismaticShares;
     }
 
@@ -176,7 +180,7 @@ public class Article {
         return comments;
     }
 
-    public void setComments(List<Comment> comments) {
+    public void setComments(final List<Comment> comments) {
         this.comments = comments;
     }
 
@@ -184,7 +188,7 @@ public class Article {
         return userShareIds;
     }
 
-    public void setUserShareIds(Share userShareIds) {
+    public void setUserShareIds(final Share userShareIds) {
         this.userShareIds = userShareIds;
     }
 
@@ -192,7 +196,7 @@ public class Article {
         return homeInterests;
     }
 
-    public void setHomeInterests(List<Item> homeInterests) {
+    public void setHomeInterests(final List<Item> homeInterests) {
         this.homeInterests = homeInterests;
     }
 
@@ -200,7 +204,7 @@ public class Article {
         return numShares;
     }
 
-    public void setNumShares(long numShares) {
+    public void setNumShares(final long numShares) {
         this.numShares = numShares;
     }
 
@@ -208,32 +212,29 @@ public class Article {
         return topics;
     }
 
-    public void setTopics(List<TitledItem> topics) {
+    public void setTopics(final List<TitledItem> topics) {
         this.topics = topics;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-                .append("id", id)
-                .append("text", text)
-                .append("date", date)
-                .append("related", related)
-                .append("activity", activity)
-                .append("firstDegreeConnections", firstDegreeConnections)
-                .append("images", images)
-                .append("author", author)
-                .append("commerce", commerce)
-                .append("title", title)
-                .append("url", url)
-                .append("feed", feed)
-                .append("prismaticShares", prismaticShares)
-                .append("comments", comments)
-                .append("userShareIds", userShareIds)
-                .append("homeInterests", homeInterests)
-                .append("numShares", numShares)
-                .append("topics", topics)
-                .toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("id", id).append("text", text)
+                                                                          .append("date", date)
+                                                                          .append("related", related)
+                                                                          .append("activity", activity)
+                                                                          .append("firstDegreeConnections",
+                                                                                  firstDegreeConnections)
+                                                                          .append("images", images)
+                                                                          .append("author", author)
+                                                                          .append("commerce", commerce)
+                                                                          .append("title", title).append("url", url)
+                                                                          .append("feed", feed)
+                                                                          .append("prismaticShares", prismaticShares)
+                                                                          .append("comments", comments)
+                                                                          .append("userShareIds", userShareIds)
+                                                                          .append("homeInterests", homeInterests)
+                                                                          .append("numShares", numShares)
+                                                                          .append("topics", topics).toString();
     }
 
     public static class ArticleBuilder {
@@ -256,109 +257,110 @@ public class Article {
         private long numShares;
         private List<TitledItem> topics;
 
-        public ArticleBuilder setId(long id) {
+        public ArticleBuilder setId(final long id) {
             this.id = id;
             return this;
         }
 
-        public ArticleBuilder setText(String text) {
+        public ArticleBuilder setText(final String text) {
             this.text = text;
             return this;
         }
 
-        public ArticleBuilder setDate(long date) {
+        public ArticleBuilder setDate(final long date) {
             this.date = date;
             return this;
         }
 
-        public ArticleBuilder setRelated(Item related) {
+        public ArticleBuilder setRelated(final Item related) {
             this.related = related;
             return this;
         }
 
-        public ArticleBuilder setActivity(Activity activity) {
+        public ArticleBuilder setActivity(final Activity activity) {
             this.activity = activity;
             return this;
         }
 
-        public ArticleBuilder setFirstDegreeConnections(Connection firstDegreeConnections) {
+        public ArticleBuilder setFirstDegreeConnections(final Connection firstDegreeConnections) {
             this.firstDegreeConnections = firstDegreeConnections;
             return this;
         }
 
-        public ArticleBuilder setImages(List<Image> images) {
+        public ArticleBuilder setImages(final List<Image> images) {
             this.images = images;
             return this;
         }
 
-        public ArticleBuilder setAuthor(Author author) {
+        public ArticleBuilder setAuthor(final Author author) {
             this.author = author;
             return this;
         }
 
-        public ArticleBuilder setCommerce(Commerce commerce) {
+        public ArticleBuilder setCommerce(final Commerce commerce) {
             this.commerce = commerce;
             return this;
         }
 
-        public ArticleBuilder setTitle(String title) {
+        public ArticleBuilder setTitle(final String title) {
             this.title = title;
             return this;
         }
 
-        public ArticleBuilder setUrl(URL url) {
+        public ArticleBuilder setUrl(final URL url) {
             this.url = url;
             return this;
         }
 
-        public ArticleBuilder setFeed(Feed feed) {
+        public ArticleBuilder setFeed(final Feed feed) {
             this.feed = feed;
             return this;
         }
 
-        public ArticleBuilder setPrismaticShares(List<List<Object>> prismaticShares) {
+        public ArticleBuilder setPrismaticShares(final List<List<Object>> prismaticShares) {
             this.prismaticShares = prismaticShares;
             return this;
         }
 
-        public ArticleBuilder addPrismaticShares(Share... share) {
+        public ArticleBuilder addPrismaticShares(final Share... share) {
             this.prismaticShares.get(0).addAll(Arrays.asList(share));
             return this;
         }
 
         // TODO need fine API for set and get
-        public ArticleBuilder addPrismaticShares(ShareUser share, UserShareAction action) {
+        public ArticleBuilder addPrismaticShares(final ShareUser share, final UserShareAction action) {
             this.prismaticShares.add(Arrays.asList(share, action));
             return this;
         }
 
-        public ArticleBuilder setComments(List<Comment> comments) {
+        public ArticleBuilder setComments(final List<Comment> comments) {
             this.comments = comments;
             return this;
         }
 
-        public ArticleBuilder setUserShareIds(Share userShareIds) {
+        public ArticleBuilder setUserShareIds(final Share userShareIds) {
             this.userShareIds = userShareIds;
             return this;
         }
 
-        public ArticleBuilder setHomeInterests(List<Item> homeInterests) {
+        public ArticleBuilder setHomeInterests(final List<Item> homeInterests) {
             this.homeInterests = homeInterests;
             return this;
         }
 
-        public ArticleBuilder setNumShares(long numShares) {
+        public ArticleBuilder setNumShares(final long numShares) {
             this.numShares = numShares;
             return this;
         }
 
-        public ArticleBuilder setTopics(List<TitledItem> topics) {
+        public ArticleBuilder setTopics(final List<TitledItem> topics) {
             this.topics = topics;
             return this;
         }
 
         public Article createArticle() {
-            return new Article(id, text, date, related, activity, firstDegreeConnections, images, author, commerce, title, url, feed, prismaticShares, comments, userShareIds, homeInterests, numShares, topics);
+            return new Article(id, text, date, related, activity, firstDegreeConnections, images, author, commerce,
+                    title, url, feed, prismaticShares, comments, userShareIds, homeInterests, numShares, topics);
         }
     }
 

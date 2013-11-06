@@ -11,10 +11,11 @@ import java.util.*;
  */
 public class Session {
     private final static Session EMPTY_SESSION = new Session();
-    private final Map<SessionToken, Map<String, String>> cookieValues = new HashMap<SessionToken, Map<String, String>>();
+    private final Map<SessionToken, Map<String, String>> cookieValues = new HashMap<SessionToken, Map<String,
+            String>>();
     private String awselb;
 
-    public static Session parseFromHeaders(List<Object> objects) {
+    public static Session parseFromHeaders(final List<Object> objects) {
         if (objects == null || objects.isEmpty()) {
             return EMPTY_SESSION;
         }
@@ -35,7 +36,7 @@ public class Session {
         return session;
     }
 
-    private static Map<String, String> extractKeyValues(String rowHeader) {
+    private static Map<String, String> extractKeyValues(final String rowHeader) {
         final Map<String, String> result = new HashMap<>();
         String[] keyValues = rowHeader.split(";");
         for (String keyValue : keyValues) {
@@ -46,7 +47,7 @@ public class Session {
         return result;
     }
 
-    private static SessionToken findSessionToken(Map<String, String> rowHeader) {
+    private static SessionToken findSessionToken(final Map<String, String> rowHeader) {
         for (SessionToken token : SessionToken.values()) {
             if (rowHeader.keySet().contains(token.name)) {
                 return token;
@@ -56,11 +57,11 @@ public class Session {
         throw new PrismaticException("New session token found=" + rowHeader);
     }
 
-    public Map<String, String> getTokenMap(SessionToken token) {
+    public Map<String, String> getTokenMap(final SessionToken token) {
         return cookieValues.get(token);
     }
 
-    public String getMainTokenValue(SessionToken token) {
+    public String getMainTokenValue(final SessionToken token) {
         return cookieValues.get(token).get(token.getName());
     }
 
@@ -73,6 +74,11 @@ public class Session {
         return cookies;
     }
 
+    @Override
+    public String toString() {
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("cookieValues", cookieValues)
+                                                                          .append("awselb", awselb).toString();
+    }
 
     public static enum SessionToken {
         AWSELB("AWSELB"),
@@ -81,20 +87,12 @@ public class Session {
         PS_WWW("_ps_www");
         private final String name;
 
-        private SessionToken(String name) {
+        private SessionToken(final String name) {
             this.name = name;
         }
 
         private String getName() {
             return name;
         }
-    }
-
-    @Override
-    public String toString() {
-        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-                .append("cookieValues", cookieValues)
-                .append("awselb", awselb)
-                .toString();
     }
 }

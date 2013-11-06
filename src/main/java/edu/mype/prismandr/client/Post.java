@@ -30,7 +30,7 @@ public class Post {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(final String id) {
         this.id = id;
     }
 
@@ -38,7 +38,7 @@ public class Post {
         return start;
     }
 
-    public void setStart(int start) {
+    public void setStart(final int start) {
         this.start = start;
     }
 
@@ -46,7 +46,7 @@ public class Post {
         return interest;
     }
 
-    public void setInterest(Interest interest) {
+    public void setInterest(final Interest interest) {
         this.interest = interest;
     }
 
@@ -54,7 +54,7 @@ public class Post {
         return next;
     }
 
-    public void setNext(NextRequest next) {
+    public void setNext(final NextRequest next) {
         this.next = next;
     }
 
@@ -62,7 +62,7 @@ public class Post {
         return removed;
     }
 
-    public void setRemoved(Removed removed) {
+    public void setRemoved(final Removed removed) {
         this.removed = removed;
     }
 
@@ -70,7 +70,7 @@ public class Post {
         return relatedInterests;
     }
 
-    public void setRelatedInterests(RelatedInterests relatedInterests) {
+    public void setRelatedInterests(final RelatedInterests relatedInterests) {
         this.relatedInterests = relatedInterests;
     }
 
@@ -78,7 +78,7 @@ public class Post {
         return articles;
     }
 
-    public void setArticles(List<Article> articles) {
+    public void setArticles(final List<Article> articles) {
         this.articles = articles;
     }
 

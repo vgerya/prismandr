@@ -33,7 +33,7 @@ public class Action {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(final String type) {
         this.type = type;
     }
 
@@ -41,7 +41,7 @@ public class Action {
         return date;
     }
 
-    public void setDate(long date) {
+    public void setDate(final long date) {
         this.date = date;
     }
 
@@ -49,7 +49,7 @@ public class Action {
         return user;
     }
 
-    public void setUser(ActionUser user) {
+    public void setUser(final ActionUser user) {
         this.user = user;
     }
 

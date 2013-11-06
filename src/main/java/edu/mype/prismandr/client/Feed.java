@@ -30,6 +30,16 @@ public class Feed extends TitledItem {
     public Feed() {
     }
 
+    public Feed(final String key, final String type, final String title, final URL image, final URL highResImage,
+                final String displayType, final long since, final long priority) {
+        super(key, type, title);
+        this.image = image;
+        this.highResImage = highResImage;
+        this.displayType = displayType;
+        this.since = since;
+        this.priority = priority;
+    }
+
     public List<String> getExplain() {
         return explain;
     }
@@ -42,17 +52,7 @@ public class Feed extends TitledItem {
         return priority;
     }
 
-    public void setPriority(long priority) {
-        this.priority = priority;
-    }
-
-    public Feed(String key, String type, String title, URL image, URL highResImage, String displayType, long since, long priority) {
-
-        super(key, type, title);
-        this.image = image;
-        this.highResImage = highResImage;
-        this.displayType = displayType;
-        this.since = since;
+    public void setPriority(final long priority) {
         this.priority = priority;
     }
 
@@ -60,7 +60,7 @@ public class Feed extends TitledItem {
         return displayType;
     }
 
-    public void setDisplayType(String displayType) {
+    public void setDisplayType(final String displayType) {
         this.displayType = displayType;
     }
 
@@ -68,7 +68,7 @@ public class Feed extends TitledItem {
         return since;
     }
 
-    public void setSince(long since) {
+    public void setSince(final long since) {
         this.since = since;
     }
 
@@ -76,7 +76,7 @@ public class Feed extends TitledItem {
         return image;
     }
 
-    public void setImage(URL image) {
+    public void setImage(final URL image) {
         this.image = image;
     }
 
@@ -84,19 +84,17 @@ public class Feed extends TitledItem {
         return highResImage;
     }
 
-    public void setHighResImage(URL highResImage) {
+    public void setHighResImage(final URL highResImage) {
         this.highResImage = highResImage;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-                .append("image", image)
-                .append("highResImage", highResImage)
-                .append("displayType", displayType)
-                .append("explain", explain)
-                .append("since", since)
-                .append("priority", priority)
-                .toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("image", image)
+                                                                          .append("highResImage", highResImage)
+                                                                          .append("displayType", displayType)
+                                                                          .append("explain", explain)
+                                                                          .append("since", since)
+                                                                          .append("priority", priority).toString();
     }
 }

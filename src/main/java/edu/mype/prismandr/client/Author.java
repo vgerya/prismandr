@@ -24,7 +24,7 @@ public class Author {
         return url;
     }
 
-    public void setUrl(URL url) {
+    public void setUrl(final URL url) {
         this.url = url;
     }
 
@@ -32,7 +32,7 @@ public class Author {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 

@@ -23,7 +23,8 @@ public class User extends TitledItem {
     public User() {
     }
 
-    public User(String key, String title, String type, String displayKey, String name, String image) {
+    public User(final String key, final String title, final String type, final String displayKey, final String name,
+                final String image) {
         super(key, title, type);
         this.displayKey = displayKey;
         this.name = name;
@@ -34,7 +35,7 @@ public class User extends TitledItem {
         return displayKey;
     }
 
-    public void setDisplayKey(String displayKey) {
+    public void setDisplayKey(final String displayKey) {
         this.displayKey = displayKey;
     }
 
@@ -42,7 +43,7 @@ public class User extends TitledItem {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -50,16 +51,14 @@ public class User extends TitledItem {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(final String image) {
         this.image = image;
     }
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
-                .append("displayKey", displayKey)
-                .append("name", name)
-                .append("image", image)
-                .toString();
+        return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE).append("displayKey", displayKey)
+                                                                          .append("name", name).append("image", image)
+                                                                          .toString();
     }
 }

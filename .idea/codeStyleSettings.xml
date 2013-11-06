@@ -4,6 +4,7 @@
     <option name="PER_PROJECT_SETTINGS">
       <value>
         <option name="GENERATE_FINAL_PARAMETERS" value="true" />
+        <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
         <DBN-PSQL>
           <case-options enabled="true">
             <option name="KEYWORD_CASE" value="lower" />
@@ -32,8 +33,10 @@
           <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
         </XML>
         <codeStyleSettings language="JAVA">
+          <option name="KEEP_LINE_BREAKS" value="false" />
           <option name="ALIGN_MULTILINE_CHAINED_METHODS" value="true" />
           <option name="METHOD_CALL_CHAIN_WRAP" value="1" />
+          <option name="WRAP_LONG_LINES" value="true" />
           <arrangement>
             <groups>
               <group>

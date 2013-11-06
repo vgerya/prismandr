@@ -28,7 +28,7 @@ public class Activity {
         return save;
     }
 
-    public void setSave(long save) {
+    public void setSave(final long save) {
         this.save = save;
     }
 
@@ -36,7 +36,7 @@ public class Activity {
         return comment;
     }
 
-    public void setComment(long comment) {
+    public void setComment(final long comment) {
         this.comment = comment;
     }
 
@@ -44,7 +44,7 @@ public class Activity {
         return remove;
     }
 
-    public void setRemove(long remove) {
+    public void setRemove(final long remove) {
         this.remove = remove;
     }
 
@@ -52,7 +52,7 @@ public class Activity {
         return share;
     }
 
-    public void setShare(long share) {
+    public void setShare(final long share) {
         this.share = share;
     }
 
@@ -60,7 +60,7 @@ public class Activity {
         return email;
     }
 
-    public void setEmail(long email) {
+    public void setEmail(final long email) {
         this.email = email;
     }
 
@@ -68,7 +68,7 @@ public class Activity {
         return bookmark;
     }
 
-    public void setBookmark(long bookmark) {
+    public void setBookmark(final long bookmark) {
         this.bookmark = bookmark;
     }
 
@@ -76,7 +76,7 @@ public class Activity {
         return click;
     }
 
-    public void setClick(long click) {
+    public void setClick(final long click) {
         this.click = click;
     }
 

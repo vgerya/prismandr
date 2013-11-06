@@ -21,7 +21,7 @@ public class Removed {
         return remainingCount;
     }
 
-    public void setRemainingCount(long remainingCount) {
+    public void setRemainingCount(final long remainingCount) {
         this.remainingCount = remainingCount;
     }
 

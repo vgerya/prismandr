@@ -26,7 +26,7 @@ public class RelatedInterests {
         return interests;
     }
 
-    public void setInterests(BaseInterest interests) {
+    public void setInterests(final BaseInterest interests) {
         this.interests = interests;
     }
 
@@ -34,30 +34,9 @@ public class RelatedInterests {
         return following;
     }
 
-    public void setFollowing(BaseInterest following) {
+    public void setFollowing(final BaseInterest following) {
         this.following = following;
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        RelatedInterests that = (RelatedInterests) o;
-
-        if (following != null ? !following.equals(that.following) : that.following != null) return false;
-        if (interests != null ? !interests.equals(that.interests) : that.interests != null) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = interests != null ? interests.hashCode() : 0;
-        result = 31 * result + (following != null ? following.hashCode() : 0);
-        return result;
-    }
-
 
     @Override
     public String toString() {

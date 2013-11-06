@@ -25,7 +25,7 @@ public class NextToken {
     public NextToken() {
     }
 
-    public NextToken(List<Long> skipIds, List<ViewedData> viewedData) {
+    public NextToken(final List<Long> skipIds, final List<ViewedData> viewedData) {
         this.skipIds = skipIds;
         this.viewedData = viewedData;
     }
@@ -34,7 +34,7 @@ public class NextToken {
         return skipIds;
     }
 
-    public void setSkipIds(List<Long> skipIds) {
+    public void setSkipIds(final List<Long> skipIds) {
         this.skipIds = skipIds;
     }
 
@@ -42,28 +42,8 @@ public class NextToken {
         return viewedData;
     }
 
-    public void setViewedData(List<ViewedData> viewedData) {
+    public void setViewedData(final List<ViewedData> viewedData) {
         this.viewedData = viewedData;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        NextToken nextToken = (NextToken) o;
-
-        if (skipIds != null ? !skipIds.equals(nextToken.skipIds) : nextToken.skipIds != null) return false;
-        if (viewedData != null ? !viewedData.equals(nextToken.viewedData) : nextToken.viewedData != null) return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = skipIds != null ? skipIds.hashCode() : 0;
-        result = 31 * result + (viewedData != null ? viewedData.hashCode() : 0);
-        return result;
     }
 
     @Override
@@ -78,17 +58,17 @@ public class NextToken {
         private List<Long> skipIds = new LinkedList<>();
         private List<ViewedData> viewedData = new LinkedList<>();
 
-        public NextTokenBuilder addSkipId(Long skipId) {
+        public NextTokenBuilder addSkipId(final Long skipId) {
             this.skipIds.add(skipId);
             return this;
         }
 
-        public NextTokenBuilder addSkipIds(Long ... skipIds) {
+        public NextTokenBuilder addSkipIds(final Long ... skipIds) {
             this.skipIds.addAll(Arrays.asList(skipIds));
             return this;
         }
 
-        public NextTokenBuilder addViewedData(ViewedData viewedData) {
+        public NextTokenBuilder addViewedData(final ViewedData viewedData) {
             this.viewedData.add(viewedData);
             return this;
         }

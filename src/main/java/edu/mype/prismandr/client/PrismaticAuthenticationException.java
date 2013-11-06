@@ -9,23 +9,24 @@ public class PrismaticAuthenticationException extends PrismaticException {
     public PrismaticAuthenticationException() {
     }
 
-    public PrismaticAuthenticationException(String message) {
+    public PrismaticAuthenticationException(final String message) {
         super(message);
     }
 
-    public PrismaticAuthenticationException(String message, Throwable cause) {
+    public PrismaticAuthenticationException(final String message, final Throwable cause) {
         super(message, cause);
     }
 
-    public PrismaticAuthenticationException(Throwable cause) {
+    public PrismaticAuthenticationException(final Throwable cause) {
         super(cause);
     }
 
-    public PrismaticAuthenticationException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public PrismaticAuthenticationException(final String message, final Throwable cause,
+                                            final boolean enableSuppression, final boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 
-    public PrismaticAuthenticationException(Response response) {
+    public PrismaticAuthenticationException(final Response response) {
         super(response);
     }
 }

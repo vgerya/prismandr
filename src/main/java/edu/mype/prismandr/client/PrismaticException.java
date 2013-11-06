@@ -11,23 +11,23 @@ public class PrismaticException extends RuntimeException {
     public PrismaticException() {
     }
 
-    public PrismaticException(String message) {
+    public PrismaticException(final String message) {
         super(message);
     }
 
-    public PrismaticException(String message, Throwable cause) {
+    public PrismaticException(final String message, final Throwable cause) {
         super(message, cause);
     }
 
-    public PrismaticException(Throwable cause) {
+    public PrismaticException(final Throwable cause) {
         super(cause);
     }
 
-    public PrismaticException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+    public PrismaticException(final String message, final Throwable cause, final boolean enableSuppression, final boolean writableStackTrace) {
         super(message, cause, enableSuppression, writableStackTrace);
     }
 
-    public PrismaticException(Response response) {
+    public PrismaticException(final Response response) {
         this.response = response;
     }
 

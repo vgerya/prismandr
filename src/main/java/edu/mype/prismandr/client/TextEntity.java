@@ -26,7 +26,7 @@ public class TextEntity {
         return userMentions;
     }
 
-    public void setUserMentions(List<String> userMentions) {
+    public void setUserMentions(final List<String> userMentions) {
         this.userMentions = userMentions;
     }
 

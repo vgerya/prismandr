@@ -1,16 +1,16 @@
 package edu.mype.prismandr.client;
 
-import com.sun.xml.txw2.annotation.XmlElement;
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * @author Vitaliy Gerya
  */
-@XmlElement
+@XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 public class TitledItem extends Item {
     private String title;
@@ -18,7 +18,12 @@ public class TitledItem extends Item {
     public TitledItem() {
     }
 
-    public TitledItem(String key, String type, String title) {
+    public TitledItem(final TitledItem titledItem) {
+        super(titledItem);
+        this.title = titledItem.title;
+    }
+
+    public TitledItem(final String key, final String type, final String title) {
         super(key, type);
         this.title = title;
     }
@@ -27,7 +32,7 @@ public class TitledItem extends Item {
         return title;
     }
 
-    public void setTitle(String title) {
+    public void setTitle(final String title) {
         this.title = title;
     }
 

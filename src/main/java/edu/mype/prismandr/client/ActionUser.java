@@ -22,18 +22,11 @@ public class ActionUser extends TitledItem {
     public ActionUser() {
     }
 
-    public ActionUser(String key, String type, String title, String name, String url, String image) {
-        super(key, type, title);
-        this.name = name;
-        this.url = url;
-        this.image = image;
-    }
-
     public String getUrl() {
         return url;
     }
 
-    public void setUrl(String url) {
+    public void setUrl(final String url) {
         this.url = url;
     }
 
@@ -41,7 +34,7 @@ public class ActionUser extends TitledItem {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -49,7 +42,7 @@ public class ActionUser extends TitledItem {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(final String image) {
         this.image = image;
     }
 

@@ -19,7 +19,7 @@ public class Size {
     public Size() {
     }
 
-    public Size(long width, long height) {
+    public Size(final long width, final long height) {
         this.width = width;
         this.height = height;
     }
@@ -28,7 +28,7 @@ public class Size {
         return width;
     }
 
-    public void setWidth(long width) {
+    public void setWidth(final long width) {
         this.width = width;
     }
 
@@ -36,7 +36,7 @@ public class Size {
         return height;
     }
 
-    public void setHeight(long height) {
+    public void setHeight(final long height) {
         this.height = height;
     }
 

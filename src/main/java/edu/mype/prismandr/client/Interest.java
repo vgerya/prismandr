@@ -18,7 +18,7 @@ public class Interest extends TitledItem {
     public Interest() {
     }
 
-    public Interest(String description, String key, String title, String type) {
+    public Interest(final String description, final String key, final String title, final String type) {
         super(key, title, type);
         this.description = description;
     }
@@ -28,29 +28,8 @@ public class Interest extends TitledItem {
         return description;
     }
 
-    public void setDescription(String description) {
+    public void setDescription(final String description) {
         this.description = description;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-
-        Interest interest = (Interest) o;
-
-        if (description != null ? !description.equals(interest.description) : interest.description != null)
-            return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = super.hashCode();
-        result = 31 * result + (description != null ? description.hashCode() : 0);
-        return result;
     }
 
     @Override
@@ -66,22 +45,22 @@ public class Interest extends TitledItem {
         private String title;
         private String type;
 
-        public InterestBuilder setDescription(String description) {
+        public InterestBuilder setDescription(final String description) {
             this.description = description;
             return this;
         }
 
-        public InterestBuilder setKey(String key) {
+        public InterestBuilder setKey(final String key) {
             this.key = key;
             return this;
         }
 
-        public InterestBuilder setTitle(String title) {
+        public InterestBuilder setTitle(final String title) {
             this.title = title;
             return this;
         }
 
-        public InterestBuilder setType(String type) {
+        public InterestBuilder setType(final String type) {
             this.type = type;
             return this;
         }

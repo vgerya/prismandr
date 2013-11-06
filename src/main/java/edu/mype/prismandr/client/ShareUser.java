@@ -1,5 +1,6 @@
 package edu.mype.prismandr.client;
 
+
 import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 
@@ -24,18 +25,11 @@ public class ShareUser extends TitledItem {
     public ShareUser() {
     }
 
-    public ShareUser(String key, String type, String title, String displayKey, String name, URL image) {
-        super(key, type, title);
-        this.displayKey = displayKey;
-        this.name = name;
-        this.image = image;
-    }
-
     public String getDisplayKey() {
         return displayKey;
     }
 
-    public void setDisplayKey(String displayKey) {
+    public void setDisplayKey(final String displayKey) {
         this.displayKey = displayKey;
     }
 
@@ -43,7 +37,7 @@ public class ShareUser extends TitledItem {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -51,7 +45,7 @@ public class ShareUser extends TitledItem {
         return image;
     }
 
-    public void setImage(URL image) {
+    public void setImage(final URL image) {
         this.image = image;
     }
 

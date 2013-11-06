@@ -28,7 +28,7 @@ public class UserShareAction {
         return actions;
     }
 
-    public void setActions(List<String> actions) {
+    public void setActions(final List<String> actions) {
         this.actions = actions;
     }
 
@@ -36,7 +36,7 @@ public class UserShareAction {
         return score;
     }
 
-    public void setScore(double score) {
+    public void setScore(final double score) {
         this.score = score;
     }
 
@@ -44,7 +44,7 @@ public class UserShareAction {
         return following;
     }
 
-    public void setFollowing(boolean following) {
+    public void setFollowing(final boolean following) {
         this.following = following;
     }
 

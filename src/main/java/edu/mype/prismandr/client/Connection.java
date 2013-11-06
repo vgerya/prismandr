@@ -29,7 +29,7 @@ public class Connection {
         return prismaticActions;
     }
 
-    public void setPrismaticActions(List<Action> prismaticActions) {
+    public void setPrismaticActions(final List<Action> prismaticActions) {
         this.prismaticActions = prismaticActions;
     }
 
@@ -37,7 +37,7 @@ public class Connection {
         return externalActions;
     }
 
-    public void setExternalActions(List<Action> externalActions) {
+    public void setExternalActions(final List<Action> externalActions) {
         this.externalActions = externalActions;
     }
 
@@ -45,7 +45,7 @@ public class Connection {
         return interests;
     }
 
-    public void setInterests(List<ConnectionInterest> interests) {
+    public void setInterests(final List<ConnectionInterest> interests) {
         this.interests = interests;
     }
 

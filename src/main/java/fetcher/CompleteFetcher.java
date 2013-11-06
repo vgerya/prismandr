@@ -7,19 +7,21 @@ import edu.mype.prismandr.client.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.*;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  * @author Vitaliy Gerya
  */
 public class CompleteFetcher {
-    private final static Logger logger = LoggerFactory.getLogger(CompleteFetcher.class);
+    private final static Logger LOGGER = LoggerFactory.getLogger(CompleteFetcher.class);
     @Inject
     private PrismaticService service;
-
     private String basedir = "./";
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Injector injector = Guice.createInjector(new PrismaticModule());
         CompleteFetcher fetcher = injector.getInstance(CompleteFetcher.class);
         fetcher.fetchAll();
@@ -30,7 +32,7 @@ public class CompleteFetcher {
         try {
             user = service.readUserHomeCredentials();
         } catch (IOException e) {
-            logger.error("Unable to read user credential.", e);
+            LOGGER.error("Unable to read user credential.", e);
 
             return;
         }
@@ -39,7 +41,7 @@ public class CompleteFetcher {
         try {
             session = service.login(user);
         } catch (PrismaticAuthenticationException ex) {
-            logger.error("Can not login.", ex);
+            LOGGER.error("Can not login.", ex);
             return;
         }
 
@@ -56,7 +58,7 @@ public class CompleteFetcher {
                     baos.flush();
                 }
             } catch (Exception ex) {
-                logger.error("error posting {}", request);
+                LOGGER.error("error posting {}", request);
                 try (BufferedOutputStream baos = new BufferedOutputStream(new FileOutputStream(new File(file.getName()
                                                                                                             .replace(".json", ".log"))));) {
                     baos.write(ex.getMessage().getBytes());
@@ -88,7 +90,8 @@ public class CompleteFetcher {
             fileName = "prism-init.json";
         } else {
             fileName = "prism-" + request.getQueryParams().getFirstArticleIdx() + "-" + request.getQueryParams()
-                                                                                               .getLastArticleIdx() + "-[" + request
+                                                                                               .getLastArticleIdx() +
+                    "-[" + request
                     .getQueryParams().getLastFeedID() + "].json";
         }
 

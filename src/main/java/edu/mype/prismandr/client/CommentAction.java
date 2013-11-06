@@ -27,7 +27,7 @@ public class CommentAction {
         return items;
     }
 
-    public void setItems(List<String> items) {
+    public void setItems(final List<String> items) {
         this.items = items;
     }
 
@@ -35,7 +35,7 @@ public class CommentAction {
         return remainingCount;
     }
 
-    public void setRemainingCount(long remainingCount) {
+    public void setRemainingCount(final long remainingCount) {
         this.remainingCount = remainingCount;
     }
 

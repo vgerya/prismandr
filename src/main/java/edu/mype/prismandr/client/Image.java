@@ -30,7 +30,7 @@ public class Image {
         return inDiv;
     }
 
-    public void setInDiv(boolean inDiv) {
+    public void setInDiv(final boolean inDiv) {
         this.inDiv = inDiv;
     }
 
@@ -38,7 +38,7 @@ public class Image {
         return originalSize;
     }
 
-    public void setOriginalSize(Size originalSize) {
+    public void setOriginalSize(final Size originalSize) {
         this.originalSize = originalSize;
     }
 
@@ -46,7 +46,7 @@ public class Image {
         return size;
     }
 
-    public void setSize(Size size) {
+    public void setSize(final Size size) {
         this.size = size;
     }
 
@@ -54,7 +54,7 @@ public class Image {
         return url;
     }
 
-    public void setUrl(URL url) {
+    public void setUrl(final URL url) {
         this.url = url;
     }
 
@@ -62,7 +62,7 @@ public class Image {
         return prob;
     }
 
-    public void setProb(double prob) {
+    public void setProb(final double prob) {
         this.prob = prob;
     }
 

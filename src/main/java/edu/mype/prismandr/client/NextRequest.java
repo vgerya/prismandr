@@ -26,7 +26,7 @@ public class NextRequest {
         return remainingCount;
     }
 
-    public void setRemainingCount(long remainingCount) {
+    public void setRemainingCount(final long remainingCount) {
         this.remainingCount = remainingCount;
     }
 
@@ -34,7 +34,7 @@ public class NextRequest {
         return queryParams;
     }
 
-    public void setQueryParams(QueryParams queryParams) {
+    public void setQueryParams(final QueryParams queryParams) {
         this.queryParams = queryParams;
     }
 
