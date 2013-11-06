@@ -18,7 +18,7 @@ public class Comment {
     private String text;
     private long date;
     @XmlElement(name = "text-entities")
-    private TextEntity textEntety;
+    private TextEntity textEntity;
     @XmlElement(name = "action-counts")
     private ActionCount actionCount;
     private String type;
@@ -57,12 +57,12 @@ public class Comment {
         this.date = date;
     }
 
-    public TextEntity getTextEntety() {
-        return textEntety;
+    public TextEntity getTextEntity() {
+        return textEntity;
     }
 
-    public void setTextEntety(final TextEntity textEntety) {
-        this.textEntety = textEntety;
+    public void setTextEntity(final TextEntity textEntity) {
+        this.textEntity = textEntity;
     }
 
     public ActionCount getActionCount() {
@@ -119,7 +119,7 @@ public class Comment {
                 .append("id", id)
                 .append("text", text)
                 .append("date", date)
-                .append("textEntety", textEntety)
+                .append("textEntity", textEntity)
                 .append("actionCount", actionCount)
                 .append("type", type)
                 .append("parentCommentId", parentCommentId)
